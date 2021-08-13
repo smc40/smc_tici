@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+	<meta charset="utf-8">
+	<title>POCA</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<base href="/">
+
+	<!-- NEW -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="static/vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="static/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="static/css/util.css">
+	<link rel="stylesheet" type="text/css" href="static/css/main.css">
+	<link rel="stylesheet" type="text/css" href="static/css/style.css">
+
+	<!-- This is the mountain CSS template -->
+	<link rel="stylesheet" type="text/css" href="static/css/mountain.css">
+
+
+</head>
+
+<header>
+</header>
+
+<body>
+  <!-- Set blue background -->
+  <div class="bg">
+
+  <!-- SOURCE CODE SIGN IN : https://codepen.io/stack-findover/pen/OJRvPQv-->
+  <!-- SOURCE CODE MOUNTAIN: https://codepen.io/Christopherallen/pen/Clajw-->
+
+    <!-- box-root  -> box-sizing: border-box; this makes it that padding is included in the box -->
+    <!-- flex-flex -> display:flex; -->
+    <div class="box-root flex-flex padding-top--64" style="flex-grow: 3;">
+      <!-- z-index keeps frame on top -->
+      <!-- class="back-white" I have just deleted this element from the next div-->
+      <div style="z-index: 9; width:60%; margin: auto; padding-bottom: 64px">
+        <div style="background: white; border-radius: 4px; box-shadow: rgba(60, 66, 87, 0.12) 0px 7px 14px 0px, rgba(0, 0, 0, 0.12) 0px 3px 6px 0px;">
+          <div class="padding-horizontal--48">
+
+			  <div style="text-align:center">
+                <img src="./static/swissmedic_logo_2.jpg" alt="Swissmedic Logo"><br>
+	          </div>
+
+			  <div style="text-align:center;">
+			      <b>Phonetic and Orthographic Computer Analysis</b><br>
+			      <small><i>openPOCA </i></small>
+			  </div><br>
+
+              <span class="padding-bottom--15">Drug Name Search</span>
+
+              <form id="stripe-login" action="/search" method="POST">
+
+                <div class="tooltip-info">
+                    Search Term
+                    <span class="tooltiptext-info" style="font-size:0.8rem">
+                        Search Term corresponds to a medicament name, for example
+                        MAVIX, or MAXITOL, or NOTAMIL that needs to be compared with
+                        the names of medicaments already in the market.
+                    </span>
+                </div>
+
+                <div class="field padding-bottom--24" style="padding-top:5px">
+                  <!-- <label for="input_0">Search Term </label>-->
+                  <input type="text" id="input_0" name="searchterm">
+                </div>
+
+                <div class="tooltip-info">
+                    Threshold Value
+                    <span class="tooltiptext-info" style="font-size:0.8rem">
+                        Threshold value is the value with which we select relevant results.
+                        Threshold can take values between 0 and 100, with 70 representing a
+                        high similarity between words.
+                    </span>
+                </div>
+
+                <div class="field padding-bottom--24" style="padding-top:5px">
+                  <!--
+                  <div class="grid--50-50"><label for="input_1">Threshold Value</label></div>
+                  -->
+                  <input type="number" id="input_1" name="threshold" value=70 min=0 max=100>
+                </div>
+
+				Which sources would you like to search
+                <!-- This holds sources "together" -->
+                <div class = "padding-bottom--24" style="display:flex; ">
+                  <div style="padding-right:40px">
+                    <!-- This div keeps two buttons as column -->
+                    <div class="field field-checkbox flex-flex align-center">
+                      <label for="checkbox"><input type="checkbox" value="fda" name="checkbox_sources"> FDA Names</label>
+                    </div>
+                    <div class="field field-checkbox flex-flex align-center">
+                      <label for="checkbox"><input type="checkbox" value="usan" name="checkbox_sources"> USAN</label>
+                    </div>
+                  </div>
+
+                  <div>
+                    <!-- This div keeps two buttons as column -->
+                    <div class="field field-checkbox flex-flex align-center">
+                      <label for="checkbox"><input type="checkbox" value="rxnorm" name="checkbox_sources"> RxNorm</label>
+                    </div>
+                    <div class="field field-checkbox  flex-flex align-center">
+                      <label for="checkbox"><input type="checkbox" value="swissmedic" name="checkbox_sources"> Swissmedic</label>
+                    </div>
+                  </div>
+
+                </div>
+
+                <!-- CLEAR & SUBMIT -->
+	            <div class="container-contact2-form-btn">
+                  <!-- wrap-contact2-form-btn-->
+	              <div  class="wrap-contact2-form-btn">
+                    <!-- btn btn-outline-primary -->
+	                <button type="button" class="button-blue" style="padding:5px 10px" onclick="document.getElementById('input_0').value='';document.getElementById('input_1').value=''">Clear</button>
+                    <!-- btn btn-outline-primary -->
+	                <button type="submit" id="checkbox" class="button-blue" style="padding:5px 10px" >Submit</button>
+	              </div>
+     			</div>
+
+              </form>
+
+			  <!-- WHY WE BUILT IT -->
+              <br><br>
+
+              <div class="center-div">
+                <form action="/explanation" method="POST">
+                  <button type="submit"  class="button-blue" style="padding:5px 10px" >
+                    Do you want to know why we built this tool?
+                  </button>
+                </form>
+              </div>
+
+              <div class="center-div">
+                <form action="/experiments" method="POST">
+                  <button type="submit"  class="button-blue" style="padding:5px 10px" >
+                    Check experiments
+                  </button>
+                </form>
+              </div>
+
+			  <br>
+
+            </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div>
+    <div class="mountain">
+      <div class="mountain-top">
+        <div class="mountain-cap-1"></div>
+        <div class="mountain-cap-2"></div>
+        <div class="mountain-cap-3"></div>
+      </div>
+    </div>
+	<div class="mountain-two">
+      <div class="mountain-top">
+        <div class="mountain-cap-1"></div>
+        <div class="mountain-cap-2"></div>
+        <div class="mountain-cap-3"></div>
+      </div>
+    </div>
+    <div class="mountain-three">
+      <div class="mountain-top">
+        <div class="mountain-cap-1"></div>
+        <div class="mountain-cap-2"></div>
+        <div class="mountain-cap-3"></div>
+      </div>
+    </div>
+	<div class="cloud"></div>
+  </div>
+
+
+</body>
+
+<!--
+<footer>
+	Last Updated: 2021-07-02
+</footer>
+-->
+
+</html>

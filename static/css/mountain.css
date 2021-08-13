@@ -1,0 +1,78 @@
+.bg{
+	overflow:auto;
+	background:#b4ddf0;
+	position: absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+}
+.mountain, .mountain-two, .mountain-three {
+    position: absolute;
+    bottom: 0;
+    border-left: 450px solid transparent; /*150*/
+    border-right: 450px solid transparent;/*150*/
+    border-bottom: 540px solid #7ac1e4;/*180*/
+    z-index: 1;
+}
+.mountain-two {
+    left: 240px; /*80*/
+    bottom: 0px; /*-20*/
+    opacity: .3;
+    z-index: 0;
+}
+.mountain-three {
+    left: -180px; /*60*/
+    bottom: 0px; /*-10*/
+    opacity: .5;
+    z-index: 0;
+}
+.mountain-top {
+    position: absolute;
+    right: -130px; /*-65*/
+    border-left: 130px solid transparent; /*65*/
+    border-right: 130px solid transparent; /*65*/
+    border-bottom: 154px solid #ceeaf6; /*77*/
+    z-index: 2;
+}
+.mountain-cap-1, .mountain-cap-2, .mountain-cap-3 {
+    position: absolute;
+    top: 140px; /*70*/
+    border-left: 50px solid transparent; /*25*/
+    border-right: 50px solid transparent;/*25*/
+    border-top: 50px solid #ceeaf6;/*150*/
+}
+.mountain-cap-1 { left: -110px; } /*-55*/
+.mountain-cap-2 { left: -50px; } /*-25*/
+.mountain-cap-3 { left: 10px; } /*5*/
+.cloud, .cloud:before, .cloud:after {
+  position: absolute;
+  width: 140px; /*70*/
+	height: 60px; /*30*/
+	background: #fff;
+	-webkit-border-radius: 100px / 50px;
+	border-radius: 100px / 50px;
+}
+.cloud {
+  bottom: 300px; /*100*/
+  -webkit-animation: cloud 50s infinite linear;
+          animation: cloud 50s infinite linear;
+}
+@-webkit-keyframes cloud {
+    0%   { left: -100px; }
+    100% { left: 1000px; }
+}
+@keyframes cloud {
+
+    0%   { left: -100px; }
+    100% { left: 1000px; }
+}
+.cloud:before {
+  content: '';
+  left: 50px;
+}
+.cloud:after {
+  content: '';
+  left: 25px;
+  top: -10px;
+}

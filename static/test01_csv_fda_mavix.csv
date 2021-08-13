@@ -1,0 +1,11 @@
+drug_name,drug_found,source,orthographic,phonetic,combined
+mavix,malix,RxNorm,80,86,83
+mavix,mavik,RxNorm; Drugs at FDA,83,74,78
+mavix,marax,RxNorm,65,80,72
+mavix,imovax,RxNorm,73,72,72
+mavix,plavix,RxNorm; Drugs at FDA,73,71,72
+mavix,matrix,RxNorm,73,69,71
+mavix,amix,RxNorm,78,61,70
+mavix,MAG-OX 400,RxNorm,60,78,69
+mavix,demix,RxNorm,60,75,68
+mavix,xalix,RxNorm,65,71,68

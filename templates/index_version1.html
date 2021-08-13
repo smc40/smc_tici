@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+	<meta charset="utf-8">
+	<title>POCA</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<base href="/">
+
+	<!-- NEW -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="static/vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="static/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="static/css/util.css">
+	<link rel="stylesheet" type="text/css" href="static/css/main.css">
+	<!-- up NEW -->
+
+	<!-- These next two lines of codes seem to have made it worse -->
+    <script type="text/javascript" charset="utf8" src="static/js/popper.js"></script>
+    <script type="text/javascript" charset="utf8" src="static/js/popper.min.js"></script>
+
+
+</head>
+
+<header>
+</header>
+
+<body>
+
+<main aria-live="polite" id="skipNavLinks">
+
+	<div class="bg-contact2" style="background-image: url('static/images/bg-01.jpg');">
+		<div class="container-contact2">
+			<div class="wrap-contact2">
+				<form class="contact2-form validate-form" action="/search" method="POST">
+
+                    <div style="text-align:center">
+						<img src="./static/swissmedic_logo_2.jpg" alt="Swissmedic Logo"><br>
+						<h1>POCA</h1>
+					</div>
+
+                    <div style="text-align:center">
+	                    <b>Phonetic and Orthographic Computer Analysis (POCA)</b><br>
+						<small><i>(SMC Version 2.0) </i></small>
+					</div>
+					<br><br>
+
+					Enter Proposed Drug Name
+					<div class="wrap-input2 validate-input" data-validate="Name is required">
+						<input class="input2" type="text" id="input_0" aria-invalid="false" name="searchterm">
+					</div>
+
+					<br>
+					Enter Threshold Value
+					<div class="wrap-input2 validate-input" data-validate = "Valid Threshold is required">
+						<input class="input2" value=70 type="number" aria-label="Threshold defines the lowest percentage of combined phonetic and orthographic similarity used by the algorithm to identify sound-alike and look-alike names.  The default threshold setting used by the FDA is 55%, meaning the algorithm identifies names with a 55% or greater combined phonetic and orthographic similarity to the candidate name under review." name="threshold" ng-model="vm.threshold" type="number" ng-change="validateThreshold()" min="0" max="100" class="ng-pristine ng-untouched ng-valid md-input ng-not-empty ng-valid-min ng-valid-max" id="input_1" step="any" aria-invalid="false">
+					</div>
+
+					</br>
+					Which sources would you like to search
+					</br>
+					FDA names <input type="checkbox" value="fda" name="checkbox_sources"></br>
+					USAN <input type="checkbox" value="usan" name="checkbox_sources"></br>
+					RxNorm <input type="checkbox" value="rxnorm" name="checkbox_sources"></br>
+					Swissmedic <input type="checkbox" value="swissmedic" name="checkbox_sources"></br>
+
+					<div class="container-contact2-form-btn">
+						<div  class="wrap-contact2-form-btn">
+							<button type="button" class="btn btn-outline-primary" onclick="document.getElementById('input_0').value='';document.getElementById('input_1').value=''">Clear</button>
+					        <button type="submit" class="btn btn-outline-primary" >Submit</button>
+						</div>
+					</div>
+
+
+				</form>
+
+    			<form class="contact2-form validate-form" action="/explanation" method="POST">
+					<div class="container-contact2-form-btn">
+						<div  class="wrap-contact2-form-btn">
+							<button type="submit" class="btn btn-outline-primary" >
+								Want to know more about why we built this tool?
+							</button>
+						</div>
+					</div>
+				</form>
+
+			</div>
+		</div>
+	</div>
+
+	<!--===============================================================================================-->
+	<script src="static/vendor/jquery/jquery-3.2.1.min.js"></script>
+	<script src="static/vendor/bootstrap/js/popper.js"></script>
+	<script src="static/vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script src="static/vendor/select2/select2.min.js"></script>
+	<script src="static/js/main.js"></script>
+	<!--===============================================================================================-->
+    <script>
+		window.addEventListener("pageshow", () => {
+    	// update hidden input field
+        });
+	</script>
+
+
+</main>
+
+</body>
+
+<footer>
+	Last Updated: 2021-07-02
+</footer>
+
+</html>

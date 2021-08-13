@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+
+
+<head>
+	<meta charset="utf-8">
+	<title>POCA</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<base href="/">
+
+	<link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.18.3/dist/bootstrap-table.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.css">
+
+	<!-- Integration interactive Table -->
+    <!--<script type="text/javascript" src="static\jquery-3.6.0.js"></script> -->
+    <!--<link rel="stylesheet" type="text/css" href="static/datatables.css"/> -->
+    <!--<script type="text/javascript" src="static/datatables.js"></script> -->
+
+	<!-- Integration 'form' format -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="static/vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="static/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="static/css/util.css">
+	<link rel="stylesheet" type="text/css" href="static/css/main.css">
+
+	<!-- Integration interactive Table -->
+    <script type="text/javascript" src="static\js\jquery-3.6.0.js"></script>
+	<script type="text/javascript" src="static\js\jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="static\js\dataTables.buttons.min.js"></script>
+    <script type="text/javascript" src="static\js\jszip.min.js"></script>
+    <script type="text/javascript" src="static\js\pdfmake.min.js"></script>
+    <script type="text/javascript" src="static\js\vfs_fonts.js"></script>
+    <script type="text/javascript" src="static\js\buttons.html5.min.js"></script>
+    <script type="text/javascript" src="static\js\buttons.print.min.js"></script>
+
+
+    <!--<script type="text/javascript" src="static\js\datatables.js"></script> -->
+	<!--<script type="text/javascript" src="static\js\datatables.min.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="static/css/buttons.dataTables.min.css"/>
+    <link rel="stylesheet" type="text/css" href="static/css/jquery.dataTables.min.css"/>
+
+
+
+
+
+
+
+</head>
+
+<header>
+</header>
+
+<body>
+
+<main aria-live="polite" id="skipNavLinks">
+
+	<div class="bg-contact2" style="background-image: url('static/images/bg-01.jpg');">
+		<div class="view--nameSearch ng-scope">
+			<div class="container-contact2">
+				<div class="wrap-contact2">
+
+                    <!-- LOGO SWISSMEDIC -->
+					<div style="text-align:center;">
+						<img src="./static/swissmedic_logo_2.jpg" alt="Swissmedic Logo">
+					</div>
+
+					<div style="text-align:center;">
+						<b>Phonetic and Orthographic Computer Analysis</b><br>
+						<small><i>(SMC Version 2.0) </i></small>
+					</div><br>
+
+					<!-- TABLE RESULTS -->
+					<div><h3>Search</h3></div><br>
+					<div>The name you looked for was: <b>{{ searchterm }}</b></div>
+					<div>The threshold you set up was: <b>{{ threshold }}</b></div>
+
+					<br>
+
+                    <!-- TABLE RESULTS -->
+					<div><h3>Results</h3></div><br>
+
+						<table id="example" class="display" cellspacing="0" width="100%">
+							<thead>
+								<tr >
+									<th class="th-lg">Name</th>
+									<th class="th-lg">Grammatik</th>
+									<th class="th-sm">Phonetik</th>
+									<th class="th-sm">Kombiniert</th>
+									<th class="th-sm">Datensatz</th>
+								</tr>
+							</thead>
+							<tbody>
+							{% for match in data%}
+							<tr >
+								<td >{{ match[0] }}</td>
+								<td >{{ match[1] }}</td>
+								<td >{{ match[2] }}</td>
+								<td >{{ match[4] }}</td>
+								<td >{{ match[3] }}</td>
+							</tr>
+							{% endfor %}
+							</tbody>
+						</table>
+
+                        <!-- Activate Interactive Table-->
+						<!--
+					    <script>
+						$(document).ready(function() {
+							$('#example').DataTable();
+						} );
+						</script>
+					    -->
+
+					    <script>
+					    $(document).ready(function() {
+							$('#example').DataTable( {
+							dom: 'Bfrtip',
+							buttons: [
+								'copy', 'csv', 'excel', 'pdf', 'print'
+							]
+							} );
+						} );
+						</script>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+</main>
+
+</body>
+	<footer class="ng-binding">
+		Last Updated: 2021-04-19
+	</footer>
+
+</html>
