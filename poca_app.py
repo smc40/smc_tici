@@ -6,8 +6,8 @@ app = Flask(__name__, template_folder='templates')
 
 # mypath = '/home/alexsmc/poca/'
 # mypath = '/Users/nicolasperez/PycharmProjects/app_poca'
-mypath = 'C:/Users/pen/PycharmProjects/poca_app'
-
+#mypath = 'C:/Users/pen/PycharmProjects/poca_app'
+mypath = 'C:/Users/pen/PycharmProjects/smc_tici/smc_tici'
 
 @app.route('/', methods=['POST', 'GET'])
 def index():
