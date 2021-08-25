@@ -15,7 +15,7 @@ cologne = importlib.import_module("cologne_phonetics")
 # _MYPATH = 'C:/Users/pen/PycharmProjects/poca_app/'
 
 # IN PROD PATH
-_MYPATH = '/'
+_MYPATH = pathlib.Path().resolve() + '/'
 
 
 def orthographic_comparison(searched_string, element_list, option):
