@@ -1,3 +1,4 @@
+import os
 import sys
 import pandas as pd
 from difflib import SequenceMatcher
@@ -8,6 +9,7 @@ cologne = importlib.import_module("cologne_phonetics")
 
 #_MYPATH = '/home/alexsmc/poca/'
 #_MYPATH = '/Users/nicolasperez/PycharmProjects/app_poca/'
+#_MYPATH = 'C:/Users/pen/PycharmProjects/poca_app/'
 _MYPATH = 'C:/Users/pen/PycharmProjects/poca_app/'
 
 
@@ -73,6 +75,7 @@ def collapse_sources(df_drugs_identified):
 
 
 def read_medicament_file(chosen_sources):
+    print(f'The current directory is {os.listdir}')
     """
     To read file from any of the four sources ['fda','rxnorm','usan','swissmedic']
 
@@ -138,9 +141,11 @@ def search(searched_string: str, sources, threshold: str = "0.5") -> pd.DataFram
         read_list = read_medicament_file(source_name)
         data_matched = match_seq_against_list(data_matched, read_list, source_name, searched_string, threshold)
 
+    print('Data is already matched')
     res = pd.DataFrame(data_matched, columns=["name", "grammatik", "phonetik", "dataset"])
     res = res.sort_values(by='grammatik', ascending=False)
     res['combined'] = res[['grammatik', 'phonetik']].mean(axis=1)
+    print('Flag: Data is already sorted')
 
     print(res.head(5))
 
