@@ -79,6 +79,7 @@ def collapse_sources(df_drugs_identified):
 
 def read_medicament_file(chosen_sources):
     print(f'The current directory is {os.listdir()}')
+    print(f'Here...')
     print(f'The current directory static is {os.listdir("/static/")}')
     """
     To read file from any of the four sources ['fda','rxnorm','usan','swissmedic']
