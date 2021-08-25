@@ -4,6 +4,8 @@ import pandas as pd
 from difflib import SequenceMatcher
 from typing import List
 import importlib
+import pathlib
+
 cologne = importlib.import_module("cologne_phonetics")
 
 
@@ -80,6 +82,7 @@ def collapse_sources(df_drugs_identified):
 def read_medicament_file(chosen_sources):
     print(f'The current directory is {os.listdir()}')
     print(f'Here...')
+    print(pathlib.Path().resolve())
     print(f'The current directory static is {os.listdir("/static/")}')
     """
     To read file from any of the four sources ['fda','rxnorm','usan','swissmedic']
