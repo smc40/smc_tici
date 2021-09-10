@@ -151,6 +151,9 @@ def read_medicament_file(chosen_sources):
             result_words = [word for word in words_within_medicament if word.lower() not in stopwords]
             compound_filtered = ' '.join(result_words)
 
+            if compound_filtered[0] == '-':
+                compound_filtered = compound_filtered[1:]
+
             # print(f'Returned name:\n{compound_filtered}')
             return compound_filtered
 
