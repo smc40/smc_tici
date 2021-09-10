@@ -1,5 +1,6 @@
 import os
 import sys
+import re
 import pandas as pd
 from difflib import SequenceMatcher
 from typing import List
@@ -120,9 +121,41 @@ def read_medicament_file(chosen_sources):
         return list_output
 
     if chosen_sources == 'swissmedic':
-        filepath = _MYPATH+'static/Swissmedic_20191012_import.csv'
-        data = pd.read_csv(filepath, header=None, delimiter="|", encoding='latin1')
-        name = data.iloc[:, 1].to_numpy().flatten()
+        # filepath = _MYPATH+'static/Swissmedic_20191012_import.csv'
+        # data = pd.read_csv(filepath, header=None, delimiter="|", encoding='latin1')
+        # name = data.iloc[:, 1].to_numpy().flatten()
+        # name = pd.Series(name).drop_duplicates()
+        # name = name.dropna().to_numpy()
+        # list_output = [drug.upper() for drug in name]
+        # print("Number of drugs at the Swissmedic database: ", len(list_output))
+
+        filepath = _MYPATH+'static/swissmedic_zugelassene_arzneimittel_20210909_public.xlsx'
+        data = pd.read_excel(filepath, skiprows=6, header=0)
+        col_compounds = 'Bezeichnung des Arzneimittels\n\n\nDénomination du médicament'
+
+        def extract_drug_name(text):
+            # print(f'\nCompounds original name:\n{text}')
+            split_char = ','
+            compound_raw = text.split(split_char)[0]
+            pattern = r' [0-9]*'
+            compound_wo_alone_numbers = re.sub(pattern, ' ', compound_raw)
+            pattern2 = r'/[0-9]*'
+            compound_number_filtered = re.sub(pattern2, ' ', compound_wo_alone_numbers)
+
+            stopwords = ['adultes', 'enfants', 'n', 'p', 's', 'u', 'e.', 'ie', '%', 'i.e.', "'000", "'250", '.25',
+                         'mg', 'ml', 'zum', 'einnehmen', 'für', 'erwachsene', 'und', 'kinder', 'ab',
+                         'jahren', 'äusserlich', 'a', 'con', 'mcg', '.1', '.2', '.4', '.5', '.6', '.8', 'g',
+                         'agenti', 'conservanti', 'nr.', 'b', 'c', '.1%', '.25%', '.5%', 'gefärbt', 'ungefärbt',
+                         '.0', '.75', 'mmol', 'l', 'Ca', '.3%', 'ug']
+            words_within_medicament = compound_number_filtered.split()
+            result_words = [word for word in words_within_medicament if word.lower() not in stopwords]
+            compound_filtered = ' '.join(result_words)
+
+            # print(f'Returned name:\n{compound_filtered}')
+            return compound_filtered
+
+        data['drug_name'] = data[col_compounds].apply(extract_drug_name)
+        name = data['drug_name'].to_numpy().flatten()
         name = pd.Series(name).drop_duplicates()
         name = name.dropna().to_numpy()
         list_output = [drug.upper() for drug in name]
