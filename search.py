@@ -20,7 +20,19 @@ localpath = pathlib.Path().resolve()
 _MYPATH = str(localpath) + '/'
 print(_MYPATH)
 
+
 def orthographic_comparison(searched_string, element_list, option):
+    '''
+    This function takes a "searched_string" which is the name that we interested in and compares it
+    against the "element_list" which are the names that are pulled from the large datasets. Short said,
+    we are interested for example in the name "MAVIX", and compare again the entire list one by one
+
+    :param searched_string: medicament name that we are interested in
+    :param element_list: medicament names from the databases
+    :param option: given phonetic technic for comparison
+    :return: phonetic_score: which is the estimation of the phonetic matching
+    '''
+
     if option == 'SequenceMatcher':
         ratio = SequenceMatcher(None, searched_string, element_list).ratio()
     return ratio
@@ -81,17 +93,16 @@ def collapse_sources(df_drugs_identified):
         return df_drugs_identified
 
 
-def read_medicament_file(chosen_sources):
-    print(f'The current directory static is {os.listdir(_MYPATH + "/static/")}')
+def read_medicament_file(chosen_sources: List):
     """
-    To read file from any of the four sources ['fda','rxnorm','usan','swissmedic']
+    read_medicament_file reads files from any of the four sources ['fda','rxnorm','usan','swissmedic']
 
     Input:
     chosen_sources: List with any number out of the possible sources ['fda','rxnorm','usan','swissmedic']
+
     Return:
     File: read individual file for that specific source.
     """
-    print('The chosen sources are: {}'.format(chosen_sources))
     if chosen_sources == 'fda':
         # Read file for comparison
         filepath = _MYPATH + 'static/drugsatfda_20210527.csv'
@@ -154,7 +165,6 @@ def read_medicament_file(chosen_sources):
             if compound_filtered[0] == '-':
                 compound_filtered = compound_filtered[1:]
 
-            # print(f'Returned name:\n{compound_filtered}')
             return compound_filtered
 
         data['drug_name'] = data[col_compounds].apply(extract_drug_name)

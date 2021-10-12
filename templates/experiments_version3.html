@@ -34,7 +34,7 @@
 
     <div class="box-root flex-flex padding-top--64" style="flex-grow: 3;">
       <!-- z-index keeps frame on top -->
-      <div class="back-white" style="z-index: 9; width:60%; margin: auto; padding-bottom: 64px">
+      <div class="back-white" style="z-index: 9; width:90%; margin: auto; padding-bottom: 64px">
         <div style="background: white; border-radius: 4px; box-shadow: rgba(60, 66, 87, 0.12) 0px 7px 14px 0px, rgba(0, 0, 0, 0.12) 0px 3px 6px 0px;">
           <div class="padding-horizontal--48">
 
@@ -42,30 +42,163 @@
 
 			<div style="text-align:center">
 				<img src="./static/swissmedic_logo_2.jpg" alt="Swissmedic Logo"><br>
-				<h1>POCA</h1>
 			</div>
 
-            <h1>UPDATED</h1>
-<!--            <table id="experiment_01" class="table table-striped table-sm table-fixed " cellspacing="0" width="100%">-->
-<!--                    <thead>-->
-<!--                      <tr >-->
-<!--                        <th class="th-lg">Name</th>-->
-<!--                        <th class="th-lg">Score</th>-->
-<!--                        <th class="th-sm">Datensatz</th>-->
-<!--                      </tr>-->
-<!--                    </thead>-->
-<!--                    <tbody>-->
-<!--                      {% for match in data%}-->
-<!--                      <tr >-->
-<!--                        <td >{{ match[0] }}</td>-->
-<!--                        <td >{{ match[1] }}</td>-->
-<!--                        <td >{{ match[2] }}</td>-->
-<!--                      </tr>-->
-<!--                      {% endfor %}-->
-<!--                    </tbody>-->
-<!--                  </table>-->
+            <!-- LOGO SWISSMEDIC -->
+		   	<div style="text-align:center;">
+			    <!--<img src="./static/swissmedic_logo_2.jpg" alt="Swissmedic Logo">-->
+                <img src="./static/images/tici_logo.svg" alt="Swissmedic Logo" width="30%"><br>
+			</div>
 
+            <h3>Experiment 1</h3>
+            <br>
+            <table id="experiment_01" class="table table-striped table-sm table-fixed " cellspacing="0" width="100%">
+                <thead>
+                    <tr>
+                        <th class="th-lg">Drug Name</th>
+                        <th class="th-lg">Drug Found</th>
+                        <th class="th-sm">Source</th>
+                        <th class="th-sm">Ortho</th>
+                        <th class="th-sm">Phonetic</th>
+                        <th class="th-sm">Combined</th>
+                        <th class="th-sm">Ortho diff</th>
+                        <th class="th-sm">Phonetic diff</th>
+                        <th class="th-sm">Combined diff</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for match in experiment_01%}
+                    <tr >
+                        <td >{{ match[0] }}</td>
+                        <td >{{ match[1] }}</td>
+                        <td >{{ match[2] }}</td>
+                        <td >{{ match[3] }}</td>
+                        <td >{{ match[4] }}</td>
+                        <td >{{ match[5] }}</td>
+                        <td >{{ match[6] }}</td>
+                        <td >{{ match[7] }}</td>
+                        <td >{{ match[8] }}</td>
+                        <td >{{ match[9] }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
 
+            <h3>Experiment 2</h3>
+            <br>
+            <table id="experiment_02" class="table table-striped table-sm table-fixed " cellspacing="0" width="100%">
+                <thead>
+                    <tr>
+                        <th class="th-lg">Drug Name</th>
+                        <th class="th-lg">Drug Found</th>
+                        <th class="th-sm">Source</th>
+                        <th class="th-sm">Ortho</th>
+                        <th class="th-sm">Phonetic</th>
+                        <th class="th-sm">Combined</th>
+                        <th class="th-sm">Ortho diff</th>
+                        <th class="th-sm">Phonetic diff</th>
+                        <th class="th-sm">Combined diff</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for match in experiment_02%}
+                    <tr >
+                        <td >{{ match[0] }}</td>
+                        <td >{{ match[1] }}</td>
+                        <td >{{ match[2] }}</td>
+                        <td >{{ match[3] }}</td>
+                        <td >{{ match[4] }}</td>
+                        <td >{{ match[5] }}</td>
+                        <td >{{ match[6] }}</td>
+                        <td >{{ match[7] }}</td>
+                        <td >{{ match[8] }}</td>
+                        <td >{{ match[9] }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+
+            <h3>Experiment 3</h3>
+            <br>
+            <table id="experiment_03" class="table table-striped table-sm table-fixed " cellspacing="0" width="100%">
+                <thead>
+                    <tr>
+                        <th class="th-lg">Drug Name</th>
+                        <th class="th-lg">Drug Found</th>
+                        <th class="th-sm">Source</th>
+                        <th class="th-sm">Ortho</th>
+                        <th class="th-sm">Phonetic</th>
+                        <th class="th-sm">Combined</th>
+                        <th class="th-sm">Ortho diff</th>
+                        <th class="th-sm">Phonetic diff</th>
+                        <th class="th-sm">Combined diff</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for match in experiment_03%}
+                    <tr >
+                        <td >{{ match[0] }}</td>
+                        <td >{{ match[1] }}</td>
+                        <td >{{ match[2] }}</td>
+                        <td >{{ match[3] }}</td>
+                        <td >{{ match[4] }}</td>
+                        <td >{{ match[5] }}</td>
+                        <td >{{ match[6] }}</td>
+                        <td >{{ match[7] }}</td>
+                        <td >{{ match[8] }}</td>
+                        <td >{{ match[9] }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+
+            <h3>Experiment 4</h3>
+            <br>
+            <table id="experiment_04" class="table table-striped table-sm table-fixed " cellspacing="0" width="100%">
+                <thead>
+                    <tr>
+                        <th class="th-lg">Drug Name</th>
+                        <th class="th-lg">Drug Found</th>
+                        <th class="th-sm">Source</th>
+                        <th class="th-sm">Ortho</th>
+                        <th class="th-sm">Phonetic</th>
+                        <th class="th-sm">Combined</th>
+                        <th class="th-sm">Ortho diff</th>
+                        <th class="th-sm">Phonetic diff</th>
+                        <th class="th-sm">Combined diff</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for match in experiment_04%}
+                    <tr >
+                        <td >{{ match[0] }}</td>
+                        <td >{{ match[1] }}</td>
+                        <td >{{ match[2] }}</td>
+                        <td >{{ match[3] }}</td>
+                        <td >{{ match[4] }}</td>
+                        <td >{{ match[5] }}</td>
+                        <td >{{ match[6] }}</td>
+                        <td >{{ match[7] }}</td>
+                        <td >{{ match[8] }}</td>
+                        <td >{{ match[9] }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+
+            <br>
+            <h5>Monitored Orthographic Loss</h5>
+
+            {% for element in ortho_avg_diff %}
+            {{ element }},
+            {% endfor %}
+
+            <br>
+            <h5>Monitored Phonetic Loss</h5>
+
+            {% for element in phonetic_avg_diff %}
+            {{ element }},
+            {% endfor %}
 
 
 

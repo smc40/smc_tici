@@ -1,0 +1,11 @@
+drug_name,drug_found,source,orthographic,phonetic,combined
+tomox,comox,RxNorm,80,94,87
+tomox,otomax,RxNorm,82,76,79
+tomox,sumox,RxNorm,65,92,78
+tomox,stomax,RxNorm,77,76,76
+tomox,trimox,RxNorm; Drugs at FDA,77,74,76
+tomox,utimox,Drugs at FDA,77,74,76
+tomox,topex,RxNorml,65,82,74
+tomox,biomox,RxNorm,73,73,73
+tomox,botox,RxNorm; Drugs at FDA,70,75,72
+tomox,tomudex,RxNorm,75,65,70

@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request
 import search
-from experiments import experiments
+from experiments import run_experiments
 
 app = Flask(__name__, template_folder='templates')
 
@@ -23,10 +23,21 @@ def explanation():
 def experiments():
 
     if request.method == 'POST':
-        experiment_01 = experiments()
-        experiment_01 = list(experiment_01.values)
+        experiments, ortho_avg_diff, phonetic_avg_diff = run_experiments()
 
-    return render_template("experiments_version3.html", experiment_01=experiment_01)
+        experiment_01 = experiments[0].values
+        experiment_02 = experiments[1].values
+        experiment_03 = experiments[2].values
+        experiment_04 = experiments[3].values
+        print(ortho_avg_diff)
+
+    return render_template("experiments_version3.html",
+                           ortho_avg_diff=ortho_avg_diff,
+                           phonetic_avg_diff=phonetic_avg_diff,
+                           experiment_01=experiment_01,
+                           experiment_02=experiment_02,
+                           experiment_03=experiment_03,
+                           experiment_04=experiment_04)
 
 
 @app.route('/search', methods=['POST'])

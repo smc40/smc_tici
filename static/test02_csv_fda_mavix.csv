@@ -1,11 +1,11 @@
 drug_name,drug_found,source,orthographic,phonetic,combined
-mavix,malix,RxNorm,80,86,83
-mavix,mavik,RxNorm; Drugs at FDA,83,74,78
-mavix,marax,RxNorm,65,80,72
-mavix,imovax,RxNorm,73,72,72
-mavix,plavix,RxNorm; Drugs at FDA,73,71,72
-mavix,matrix,RxNorm,73,69,71
-mavix,amix,RxNorm,78,61,70
-mavix,MAG-OX 400,RxNorm,60,78,69
-mavix,demix,RxNorm,60,75,68
-mavix,xalix,RxNorm,65,71,68
+paramal,paramol,RxNorm,95,95,95
+paramal,parasal,Drugs at FDA,86,81,84
+paramal,paral,RxNorm,89,62,76
+paramal,prantal,Drugs at FDA,75,78,76
+paramal,patanol,RxNorm; Drugs at FDA,78,69,74
+paramal,pirmella 1/35,Drugs at FDA,70,74,72
+paramal,pirmella 7/7/7,Drugs at FDA,70,74,72
+paramal,pharmasal,RxNorm,81,61,71
+paramal,pyridamal 100,Drugs at FDA,78,64,71
+paramal,carmol,RxNorm,69,72,70

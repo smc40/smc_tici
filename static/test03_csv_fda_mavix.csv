@@ -1,0 +1,11 @@
+drug_name,drug_found,source,orthographic,phonetic,combined
+betimal,betimol,RxNorm; Drugs at FDA,95,95,95
+betimal,beta-val,RxNorm; Drugs at FDA,78,84,81
+betimal,betasal,RxNorm,78,76,77
+betimal,butibel,RxNorm,68,85,76
+betimal,betim,RxNorm,86,62,74
+betimal,beta med,RxNorm,68,77,72
+betimal,dibenil,Drugs at FDA,61,78,70
+betimal,1-butanol,RxNorm,57,81,69
+betimal,batilol,RxNorm,68,67,68
+betimal,abetimus,RxNorm,73,62,68
