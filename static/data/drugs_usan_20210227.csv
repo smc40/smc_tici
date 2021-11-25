@@ -1,0 +1,625 @@
+RECORD_SOURCE_ID|STEM|AFFIX|OPTIONAL_CHAR|IS_SUBGROUP|AFFIX_TYPE|DEFINITION|EXAMPLE
+3529|FAKE_ENTRY|FAKE_ENTRY||FAKE_ENTRY|S|FAKE_ENTRY|MAVIKK
+3529|(a)mostat|-(a)mostat|(a)|N|S|(see -stat)|
+3529|(a)tadine|-(a)tadine|(a)|N|S|tricyclic histaminic-H1 receptor antagonists, loratadine derivatives (formerly -tadine)|deloratadine
+3529|abine|-abine||N|S|(see -arabine, -citabine)|
+3529|acetam|-acetam||N|S|(see -racetam)|
+3529|actant|-actant||N|S|pulmonary surfactants|beractant, lucinactant, calfactant,poractant alfa
+3529|actide|-actide||N|S|(see -tide)|
+3529|ac|-ac||N|S|anti-inflammatory agents (acetic acid derivatives)|bromfenac
+3529|adenant|-adenant||N|S|adenosine 2A antagonists|preladenant
+3529|adol|-adol-||N|I|analgesics (mixed opiate receptor agonists/antagonists)|tazadolene
+3529|adol|-adol||N|S|analgesics (mixed opiate receptor agonists/antagonists)|tazadolene
+3529|adox|-adox||N|S|antibacterials (quinoline dioxide derivatives)|carbadox
+3529|afenone|-afenone||N|S|antiarrhythmics (propafenone derivatives)|alprafenone
+3529|afil|-afil||N|S|phosphodiesterase type 5 inhibitors (PDE5) inhibitors|tadalafil
+3529|aj|-aj-||N|I|antiarrythmics (ajmaline deriviatives)|lorajmine
+3529|alap|-alap||N|S|aldehyde traps|reproxalap
+3529|aldrate|-aldrate||N|S|antacid aluminum salts|magaldrate
+3529|algron|-algron||N|S|?1 - and ?2 - adrenoreceptor agonists|dabuzalgron
+3529|alol|-alol||N|S|combined alpha and beta blockers|labetalol
+3529|amidine|-amidine||N|S|pentamidine derivatives/analogues|pafuramidine
+3529|amidis|-amidis||N|S|antimyloidotics|tafamidis
+3529|amivir|-amivir||N|S|(see -vir)|
+3529|amostat|-amostat||N|S|(see -stat)|
+3529|ampanel|-ampanel||N|S|(see -ampa-)|
+3529|ampator|-ampator||N|S|(see -ampa-)|
+3529|ampa|-ampa-||N|I|ionotropic non-NMDA (N-methyl D-aspartate) glutamate receptors [AMPA (?-amino-3-hydroxy-5-methyl-4-isoxazolepropionic acid receptor) and/or KA (kainite antagonist) receptors]|
+3529|andr|-andr-||N|I|androgens|nandrolone
+3529|anib|-anib||N|S|angiogenesis inhibitors|pegaptanib
+3529|aniten|-aniten||N|S|androgen receptor inhibitor, N-terminal domain inhibitor|ralaniten
+3529|anserin|-anserin||N|S|serotonin 5-HT2 receptor antagonists|altanserin
+3529|antel|-antel||N|S|anthelminitics (undefined group)|carbantel
+3529|antrone|-antrone||N|S|antineoplastics, anthraquinone derivatives|pixantrone
+3529|apsel|-apsel||N|S|P-selectin antagonists|torapsel
+3529|apt|-apt-||N|I|aptamers, classical and mirror|pegaptanib, egaptivon pegol
+3529|arabine|-arabine||N|S|antineoplastics (arabinofuranosyl derivatives)|fazarabine
+3529|aril|-aril-||N|I|antiviral (arildone derivatives)|pleconaril
+3529|aril|-aril||N|S|antiviral (arildone derivatives)|pleconaril
+3529|aril|aril-||N|P|antiviral (arildone derivatives)|pleconaril
+3529|arit|-arit||N|S|antirheumatics (lobenzarit type)|lobenzarit, clobuzarit
+3529|arol|-arol||N|S|anticoagulants (dicumarol type)|dicumarol
+3529|arone|-arone||N|S|antiarrhythmics|dronedarone, amioderone
+3529|arotene|-arotene||N|S|arotinoid derivatives|bexarotene, linarotene, tazarotene
+3529|arsin|-arsin||N|S|organoarsenic compounds|darinaparsin
+3529|arte|arte-||N|P|antimalarials (artemisinin derivatives)|arteflene
+3529|ase|-ase||N|S|enzymes|alglucerase
+3529|astine|-astine||N|S|antihistaminics (histamine-H1 receptor antagonists)|ebastine
+3529|ast|-ast||N|S|antiasthmatics/antiallergics (not acting primarily as antihistamines)|
+3529|asvir|-asvir||N|S|(see -vir)|
+3529|azenil|-azenil||N|S|benzodiazepine receptor agonists/antagonists|bretazenil
+3529|azepam|-azepam||N|S|antianxiety agents (diazepam type)|lorazepam, clonazepam
+3529|azepid|-azepide||N|S|cholecystokinin receptor antagonists|devazepide
+3529|azocine|-azocine||N|S|narcotic antagonists/agonists (6,7-benzomorphan derivatives)|quadazocine
+3529|azoline|-azoline||N|S|antihistamines/local vasoconstrictors (antazoline type)|antazoline
+3529|azosin|-azosin||N|S|antihypertensives (prazosin type)|doxazosin
+3529|bacept|-bacept||N|S|(see -cept)|
+3529|bactam|-bactam||N|S|?-lactamase inhibitors|sulbactam
+3529|bamate|-bamate||N|S|tranquilizers/antiepileptics (propanediol and pentanediol groups)|meprobamate
+3529|barb|-barb-||N|I|barbituric acid derivatives|eterobarb
+3529|barb|-barb||N|S|barbituric acid derivatives|eterobarb
+3529|basib|-basib||N|S|inhibitors of the ADAM (A disintegrin and A metalloprotease) enzymes (sheddases)|aderbasib
+3529|begron|-begron||N|S|?3 adrenoreceptor agonists|talibegron
+3529|benakin|-benakin||N|S|(see kin)|
+3529|bendazole|-bendazole||N|S|antithelmintics (tibendazole type)|cambendazole
+3529|bercept|-bercept||N|S|(see -cept)|
+3529|berel|-berel||N|S|estrogen receptor ? agonist|prinaberel
+3529|bermin|-bermin||N|S|(see -ermin)|
+3529|bersat|-bersat||N|S|anticonvulsants; antimigraine (benzoylamino-benzpyran derivatives)|carabersat
+3529|betin|-betin||N|S|Amyloid ? (A?) binders|aftobetin
+3529|bol|-bol-||N|I|anabolic steroids|bolandiol
+3529|bol|bol-||N|P|anabolic steroids|bolandiol
+3529|borole|-borole||N|S|boroles, boron compounds|crisaborole
+3529|bresib|-bresib||N|S|bromodomain and extra terminal motif (BET) inhibitors|birabresib
+3529|brutinib|-brutinib||N|S|(see -tinib)|
+3529|bufen|-bufen||N|S|non-steriodal anti-inflammatory agents, fenbufen derivatives|indobufen
+3529|bulin|-bulin||N|S|antineoplastics (mitotic inhibitors; tubulin binders)|mivobulin
+3529|butan|-butan||N|S|antiseptics (dapabutan type)|lopobutan
+3529|butazone|-butazone||N|S|anti-inflammatory analgesics (phenylbutazone type)|mofebutazone
+3529|buvir|-buvir||N|S|(see -vir)|
+3529|caftor|-caftor||N|S|cystic fibrosis transmembrane regulator (CFTR) protein modulators|ivacaftor
+3529|caine|-caine||N|S|local anesthetics|dibucaine
+3529|calcet|-calcet||N|S|calcium-sensing receptor (CaSR) agonists|tecalcet
+3529|calci|-calci-||N|I|vitamin D analogs|calcipotriene
+3529|calci|calci-||N|P|vitamin D analogs|calcipotriene
+3529|caleret|-caleret||N|S|calcium receptor antagonists|ronacaleret
+3529|camra|-camra||N|S|antivirals (intracellular adhesion molecule 1 (ICAM-1) derivatives|tremacamra
+3529|camsule|-camsule||N|S|camphorsulfonic acid derivatives used as UVA sunscreens|ecamsule
+3529|camtiv|-camtiv||N|S|cardiac myosin activator|omecamtiv mecarbil
+3529|capoc|-capoc||N|S|agonists of the Gardos channel, or the calcium activated potassium channel of intermediate conductance|senicapoc
+3529|capone|-capone||N|S|catechol-O-methyltransferase (COMT) inhibitors|entacapone
+3529|carbef|-carbef||N|S|antibiotics (carbacephem derivatives)|loracarbef
+3529|casan|-casan||N|S|caspase inhibitors|pralnacasan
+3529|caserin|-caserin||N|S|serotonin receptor agonists, primarily 5-HT2|lorcaserin
+3529|castat|-castat||N|S|(see -stat)|
+3529|catib|-catib||N|S|cathespin inhibitors|balicatib
+3529|cavir|-cavir||N|S|(see -vir)|
+3529|cebec|-cebec||N|S|cytochrome bc1 complex inhibitors in mycobacterium tuberculosis|telacebec
+3529|cef|cef-||N|P|cephalosporins|cefazolin
+3529|cept|-cept||N|S|Receptor molecules or membrane ligands, natural or modified|
+3529|cerfont|-cerfont||N|S|CRF-1 (corticotropin releasing factor) receptor antagonists|pexacerfont
+3529|cetrapib|-cetrapib||N|S|cholesterol ester transfer protein inhibitors|torcetrapib
+3529|ciclib|-ciclib||N|S|cyclin dependent kinase inhibitors (formerly -cidib)|seliciclib
+3529|ciclovir|-ciclovir||N|S|(see -vir)|
+3529|cic|-cic||N|S|hepatoprotectives (timonacic type)|limazocic
+3529|cidin|-cidin||N|S|natural antibiotics (undefined group)|gramicidin
+3529|ciguat|-ciguat||N|S|guanaline cyclase activators|ataciguat
+3529|cillin|-cillin||N|S|penicillins|ampicillin
+3529|cirnon|-cirnon||N|S|Chemokine receptor (CCR) antagonists, not antivirals|vercirnon
+3529|citabine|-citabine||N|S|nucleoside antiviral or antineoplastic agents, cytarabine or azarabine derivatives|gemcitabine
+3529|citinib|-citinib||N|S|(see -tinib)|
+3529|clidine|-clidine||N|S|muscarinic receptor agonists/antagonists (see also -ium)|vedaclidine
+3529|clidinium|-clidinium||N|S|muscarinic receptor agonists/antagonists (see also -ium)|vedaclidine
+3529|clomol|-clomol||N|S|heat-shock protein inducers, bimoclomal type|elesclomol
+3529|clone|-clone||N|S|hypnotics/tranquilizers (zopiclone type)|pagoclone
+3529|closporin|-closporin||N|S|cyclosporin derivatives|oxeclosporin
+3529|cocept|-cocept||N|S|(see -cept)|
+3529|conazole|-conazole||N|S|systemic antifungals (miconazole type)|fluconazole
+3529|copan|-copan||N|S|human complement C5a receptor antagonists|avacopan
+3529|copan|-padon||N|S|dopamine D1-like receptor (e.g., D1 and D5 subtypes) agonists/partial agonists|tavapadon
+3529|coplan|-coplan||N|S|Complement ligand inhibitors|zilucoplan
+3529|corat|-corat||N|S|glucocorticoid receptor agonists ( not glucocorticoids)|mapracorat
+3529|corilant|-corilant||N|S|glucocorticoid receptor antagonists (not glucocorticoids)|relacorilant
+3529|cort|-cort-||N|I|cortisone derivatives|hydrocortisone
+3529|coxib|-coxib||N|S|cyclooxygenase-2 inhibitors|celecoxib
+3529|cridar|-cridar||N|S|(see -dar)|
+3529|crinat|-crinat||N|S|diuretics (ethacrynic acid derivatives)|brocrinat
+3529|crine|-crine||N|S|acridine derivatives|amsacrine
+3529|cromil|-cromil||N|S|antiallergics (cromoglicic acid derivatives)|nedocromil
+3529|curium|-curium||N|S|neuromuscular blocking agents (quaternary; also ammonium compounds)|atracurium
+3529|curonium|-curonium||N|S|neuromuscular blocking agents (quaternary; also ammonium compounds)|atracurium
+3529|cycline|-cycline||N|S|antibiotics (tetracycline derivatives)|minocycline
+3529|cyclovir|-cyclovir||N|S|(see -vir)|
+3529|dacin|-dacin||N|S|antibiotics, DNA gyrase and topoisomerase IV inhibitors|zoliflodacin, gepotidacin
+3529|dan|-dan||N|S|positive inotropic agents (pimobendan type)|prinoxodan
+3529|dapsone|-dapsone||N|S|antimycobacterials (diaminodiphenylsulfone derivatives)|acedapsone
+3529|dar|-dar||N|S|multidrug resistance inhibitors|
+3529|decakin|-decakin||N|S|(see -kin)|
+3529|degib|-degib||N|S|hedgehog signaling inhibitors|vismodegib
+3529|delpar|-delpar||N|S|PPAR delta receptor agonists|fonadelpar
+3529|denant|-denant||N|S|adenosine 2A antagonists|preladenant
+3529|denoson|-denoson||N|S|adenosine A receptor agonists|tecadenoson
+3529|depsin|-depsin||N|S|depsipeptide derivatives|romidepsin
+3529|dermin|-dermin||N|S|(see -ermin)|
+3529|desivir|-desivir||N|S|(see -vir)|
+3529|deu|deu-||N|P|deuterated compounds|deudextromethorphan
+3529|dil|-dil-||N|I|vasodilators (undefined group)|fostedil
+3529|dil|-dil||N|S|vasodilators (undefined group)|fostedil
+3529|dipine|-dipine||N|S|phenylpyridine vasodilators|darodipine
+3529|dismase|-dismase||N|S|(see -ase)|
+3529|distim|-distim||N|S|(see -stim)|
+3529|ditan|-ditan||N|S|antimigraine , serotonin 5-HT1 receptor agonists|alniditan
+3529|ditraz|-ditraz||N|S|acaricide/tick repellent|demiditraz
+3529|dnar|-dnar||N|S|DNA fragments that block transcription|rosomidnar
+3529|dodekin|-dodekin||N|S|(see -kin)|
+3529|domide|-domide||N|S|thalidomide derivatives|lenalidomide
+3529|dopa|-dopa||N|S|dopamine receptor agonists|levodopa
+3529|dopidine|-dopidine||N|S|dopamine D2 receptor modulator|pridopidine
+3529|dore|-dore||N|S|dopamine D2D3 receptor modulators|aplindore fumarate
+3529|dotin|-dotin||N|S|synthetic analogs of the dolastatin series|vedotin
+3529|dralazine|-dralazine||N|S|antihypertensives (hydrazine-phthalazines)|hydralazine
+3529|drimer|-drimer||N|S|(see -mer)|
+3529|drine|-drine||N|S|sympathomimetics|alifedrine
+3529|dronate|-dronate||N|S|calcium metabolism regulators|etidronate
+3529|dutant|-dutant||N|S|(see -tant)|
+3529|ectedin|-ectedin||N|S|ecteinascidin derivatives|monectedin
+3529|ectin|-ectin||N|S|antiparasitics (ivermectin type)|doramectin
+3529|ef|-ef-||N|I|Fc region is present|Pegefinodutide
+3529|ef|ef-||N|P|Fc fusion protein|
+3529|elestat|-elestat||N|S|(see -stat)|
+3529|elvekin|-elvekin||N|S|(see -kin)|
+3529|emcinal|-emcinal||N|S|erythromycin derivatives lacking antibiotic activity; motilin agonists|mitemcinal
+3529|enicokin|-enicokin||N|S|(see -kin)|
+3529|entan|-entan||N|S|endothelin receptor antagonists|bosentan
+3529|eptakin|-eptakin||N|S|(see -kin)|
+3529|erg|-erg-||N|I|ergot alkaloid deriviatives|pergolide
+3529|eridine|-eridine||N|S|analgesics (meperidine type)|anileridine
+3529|ermin|-ermin||N|S|growth factors|
+3529|espib|-espib||N|S|heat shock protein inhibitors|ganetespib
+3529|estrant|-estrant||N|S|estrogen antagonists|fulvestrant
+3529|estr|-estr-||N|I|estrogens|estrone
+3529|estr|estr-||N|P|estrogens|estrone
+3529|etanide|-etanide||N|S|diuretics (piretanide type)|bumetanide
+3529|exakin|-exakin||N|S|(see -kin)|
+3529|facept|-facept||N|S|(see -cept)|
+3529|fadine|-fadine||N|S|monoamine transport inhibitors|centanafadine
+3529|farcept|-farcept||N|S|(see -cept)|
+3529|farin|-farin||N|S|warfarin analogs|tecarfarin
+3529|farnib|-farnib||N|S|farnesyl transferase inhibitor|tipifarnib
+3529|faxine|-faxine||N|S|antianxiety, antidepressant inhibitor of norepinephrine and dopamine re-uptake|radafaxine
+3529|fenacin|-fenacin||N|S|muscarinic receptor antagonists|darifenacin
+3529|fenamate|-fenamate||N|S||
+3529|fenamic acid|-fenamate acid||N|P|anti-inflammatoryagents(anthranilicacidderivatives)andtheirsalts|etofenamate
+3529|fenine|-fenine||N|S|analgesics (fenamic acid subgroup)|floctafenine
+3529|fenin|-fenin||N|S|diagnostic aids ((phenylcarbamoyl) methyl iminodiacetic acid derivatives)|arclofenin
+3529|fensine|-fensine||N|S|norepinephrine, serotonin, dopamine, reuptake inhibitor|brasofensine
+3529|fentanil|-fentanil||N|S|narcotic analgesics (fentanyl derivatives)|alfentanil
+3529|fentrine|-fentrine||N|S|phosphodiesterase inhibitor|pumafentrine
+3529|fermin|-fermin||N|S|(see -ermin)|
+3529|fetamin(e)|-fetamin(e)|(e)|N|S|amfetamine derivatives|levmetamfetamine
+3529|fexorate|-fexorate||N|S|farnesoid X receptor agonists|turofexorate
+3529|fexor|-fexor-||N|I|farnesoid X receptor agonists|turofexorate
+3529|fiban|-fiban||N|S|fibrinogen receptor antagonists (glycoprotein IIb/IIIa receptor antagonists)|lamifiban
+3529|fibatide|-fibatide||N|S|(see -tide)|
+3529|fibrate|-fibrate||N|S|antihyperlipidemics (clofibrate type)|bezafibrate
+3529|fibric acid|-fibric acid||N|S|antihyperlipidemics (clofibrate type)|bezafibrate
+3529|filcon|-filcon||N|S|hydrophilic contact lens material|alphafilcon A
+3529|fingol|-fingol||N|S|sphingosine derivatives|cedefingol
+3529|flapon|-flapon||N|S|5-lipoxygenase-activating protein (FLAP) inhibitors|quiflapon
+3529|flurane|-flurane||N|S|general inhalation anesthetics (halogenated alkane derivatives)|enflurane
+3529|fo(s)|-fo(s)-|(s)|N|I|phosphoro-derivatives|fosinoprilant
+3529|fo(s)|fo(s)-|(s)|N|P|phosphoro-derivatives|fosinoprilant
+3529|focon|-focon||N|S|hydrophobic contact lens materials|trifocon A
+3529|folastat|-folastat||N|S|(see -stat)|
+3529|forant|-forant||N|S|histamine H4 receptor antagonists|toreforant
+3529|formin|-formin||N|S|hypoglycemics (phenformin type)|buformin
+3529|fosfamide|-fosfamide||N|S|isophosphoramide mustard derivatives|palifosfamide
+3529|fradil|-fradil||N|S|(see -dil)|
+3529|fulven|-fulven||N|S|antineoplastic, acylfulvene derivatives|viridofulven
+3529|fungerp|-fungerp||N|S|Antifungals, triterpinoids|ibrexafungerp
+3529|fungin|-fungin||N|S|antifungal antibiotics (undefined group)|kalafungin
+3529|fusp|-fusp||N|S|fusion proteins|rasdegafusp alfa
+3529|fylline|-fylline||N|S|theophylline derivatives|enprofylline
+3529|gab|-gab-||N|I|gabamimetics|fengabine
+3529|gab|gab-||N|P|gabamimetics|fengabine
+3529|gacestat|-gacestat||N|S|(see -stat)|
+3529|gado|gado-||N|P|gadolinium derivatives (principally for diagnostic use)|gadodiamide
+3529|ganan|-ganan||N|S|antimicrobial, bactericidal permeability increasing polypeptide|iseganan
+3529|gapil|-gapil||N|S|neuronal apoptosis inhibitors; glyceraldehyde-3-phosphate dehydrogenase (GAPDH)|omigapil
+3529|gaptide|-gaptide||N|S|(see -tide)|
+3529|gatran|-gatran||N|S|thrombin inhibitors (argatroban type)|efegatran
+3529|gepant|-gepant||N|S|calcitonin gene-related peptide receptor antagonists|telcagepant
+3529|gest|-gest-||N|I|progestins|megestrol
+3529|giline|-giline||N|S|Monoamine oxidase (MAO) inhibitors, type B|selegiline
+3529|gillin|-gillin||N|S|antibiotics (Aspergillus strains)|mitogillin
+3529|gliatin|-gliatin||N|S|glucokinase activator|piragliatin
+3529|gliflozin|-gliflozin||N|S|phlorozin derivatives, phenolic glycosides|sergliflozin
+3529|glinide|-glinide||N|S|antidiabetic, sodium glucose co-transporter 2 (SGLT2) inhibitors, not phlorozin derivatives|repaglinide
+3529|gliptin|-gliptin||N|S|dipeptidyl aminopeptidase-IV inhibitors|vildagliptin
+3529|glitazar|-glitazar||N|S|peroxisome proliferator activiating receptor (PPAR) agonists (not thiazolidene derivatives)|farglitazar
+3529|glitazone|-glitazone||N|S|peroxisome proliferator activiating receptor (PPAR) agonists (thiazolidene derivatives)|ciglitazone
+3529|glivant|-glivant||N|S|antagonist of the glucagon receptor|domeglivant
+3529|gli|gli-||N|P|antihyperglycemics|gliflumide
+3529|glucagon|-glucagon||N|S|synthetic glucagon analogs|dasiglucagon
+3529|glumide|-glumide||N|S|cholecystokinin (CCK) antagonists, antiulcer, anxiolytic agent|amiglumide
+3529|glurant|-glurant||N|S|metabotropic glutamate receptor antagonists, negative allosteric modulators|raseglurant
+3529|glustat|-glustat||N|S|(see -stat)|
+3529|glutide|-glutide||N|S|(see -tide)|
+3529|golix|-golix||N|S|gonadotropin releasing hormone (GnRH) receptor antagonists (nonpeptide)|sufugolix
+3529|gosivir|-gosivir||N|S|(see -vir)|
+3529|gramostim|-gramostim||N|S|(see -stim)|
+3529|grastim|-grastim||N|S|(see -stim)|
+3529|grel|-grel-||N|I|platelet aggregation inhibitors, primarily platelet P2Y12 receptor antagonists|anagrelide
+3529|grel|-grel||N|S|platelet aggregation inhibitors, primarily platelet P2Y12 receptor antagonists|anagrelide
+3529|guan|guan-||N|P|antihypertensives (guanidine deriviatives)|guanoctine
+3529|icam|-icam||N|S|anti-inflammatory agents  (isoxicam type)|enolicam
+3529|icodar|-icodar||N|S|(see -dar)|tamoxifen
+3529|ifene|-ifene||N|S|antiestrogens of the clomifene and tamoxifen groups (formerly-iphene,-ifen)|enclomifene
+3529|ilide|-ilide||N|S|class III antiarrhythmic agents|risotilide
+3529|imepodib|-imepodib||N|S|inosine monophosphate dehydrogenase inhibitors|merimepodib
+3529|imex|-imex||N|S|immunostimulants|forfenimex
+3529|imibe|-imibe||N|S|antihyperlipidaemics, acyl CoA: cholesterol acyltransferase (ACAT) inhibitors|eldacimibe
+3529|imod|-imod||N|S|Immunomodulators, toll-like receptor agonists|ivarimod
+3529|imus|-imus||N|S|immunosuppressives|napirimus
+3529|inostat|-inostat||N|S|(see -stat)|
+3529|inurad|-inurad||N|S|urate transporter e.g., urate anion exchanger 1 (URAT1) inhibitors|lesinurad
+3529|iodarone|-iodarone||N|S|(see -arone)|
+3529|io|-io-||N|I|iodine-containing contrast media|iodamide
+3529|io|io-||N|P|iodine-containing contrast media|iodamide
+3529|iphene|-iphene||N|S|(see -ifen(e))|
+3529|irudin|-irudin||N|S|anticoagulants (hirudin type)|desirudin
+3529|isant|-isant||N|S|histamine H3 receptor antagonists|cipralisant
+3529|isomide|-isomide||N|S|antiarrhythmics (disopyramide derivatives)|bidisomide
+3529|ium|-ium||N|S|quaternary ammonium derivatives|disiquonium
+3529|ivon|-ivon||N|S|Von Willebrand factor inhibitors|egaptivon pegol
+3529|ixibat|-ixibat||N|S|ileal bile acid transporter (IBAT) inhibitors (formerly-ibat)|barixibat
+3529|kacin|-kacin||N|S|antibiotics obtained from Streptomyces kanamyceticus (related to kanamycin)|amikacin
+3529|kalant|-kalant||N|S|potassium channel antagonists|almokalant
+3529|kalim|-kalim||N|S|potassium channel agonists|cromakalim
+3529|kalner|-kalner||N|S|opener of large conductance calcium-activated (maxi-K) potassium channels|flindokalner
+3529|kef|-kef-||N|I|enkephalin agonists (various indications)|casokefamide
+3529|kinra|-kinra||N|S|interleukin receptor antagonists|anakinra
+3529|kin|-kin||N|S|interleukins|
+3529|kiren|-kiren||N|S|renin inhibitors|ditekiren
+3529|laner|-laner||N|S|antiparasitics (isoxazoline compounds)|afoxolaner
+3529|lanstat|-lanstat||N|S|(see -stat)|
+3529|lazard|-lazard||N|S|lipid peroxidation inhibitors|tirilazard
+3529|lazine|-lazine||N|S|antiarrhythmic/antianginal/antihypertensive agents, phthalazine like structure|hydralazine, cadralazine, endralazine
+3529|lefacept|-lefacept||N|S|(see -cept)|
+3529|leptin|-leptin||N|S|leptin derivatives|metreleptin
+3529|leukin|-leukin||N|S|(see -kin)|
+3529|leuton|-leuton||N|S|5-lipoxygenase inhibitors|setileuton
+3529|lintide|-lintide||N|S|(see -tide)|
+3529|lipim|-lipim||N|S|lipoprotein lipase activators|ibrolipim
+3529|lisib|-lisib||N|S|phosphatidylinositol 3-kinase (PI3K) inhibitors|pictilisib
+3529|listat|-listat||N|S|(see -stat)|
+3529|lubant|-lubant||N|S|leukotriene receptor antagonists (treatment of inflammatory skin disorders)|ticolubant
+3529|lukast|-lukast||N|S|(see -ast)|
+3529|luren|-luren||N|S|inducers of ribosomal readthrough on nonsense mutation mRNA stop codons|ataluren
+3529|lutamide|-lutamide||N|S|non-steroid antiandrogens|bicalutamide
+3529|lutril|-lutril||N|S|(see -tril)|
+3529|mab|-mab||N|S|monoclonal antibodies|imciromab
+3529|manid|-manid||N|S|mycolic acid inhibitors|delamanid, pretomanid
+3529|mantadine|-mantadine||N|S|antivirals/antiparkinsonians (adamantane derivatives)|rimantadine
+3529|mantine|-mantine||N|S|antivirals/antiparkinsonians (adamantane derivatives)|rimantadine
+3529|mapimod|-mapimod||N|S|(see -imod)|
+3529|maprazole|-maprazole||N|S|(see -prazole)|
+3529|mastat|-mastat||N|S|(see -stat)|
+3529|meline|-meline||N|S|cholinergic agonists (arecoline derivatives used in treatment of Alzheimer's disease|xanomeline
+3529|melteon|-melteon||N|S|selective melatonin receptor agonist|ramelteon
+3529|mer|-mer||N|S|polymers|cadexomer
+3529|mesine|-mesine||N|S|sigma receptor ligands|igmesine
+3529|mestane|-mestane||N|S|antineoplastics (aromatase inhibitors)|plomestane
+3529|metacin|-metacin||N|S|anti-inflammatory agents (indomethacin type)|zidometacin
+3529|micin|-micin||N|S|antibiotics (Micromonospora strains)|maduramicin
+3529|milast|-milast||N|S|(see -ast)|
+3529|minib|-minib||N|S|kinase inhibitor, binds to myristoyl binding site|asciminib
+3529|monam|-monam||N|S|monobactam antibiotics|gloximonam
+3529|morelin|-morelin||N|S|(see -relin)|
+3529|moren|-moren||N|S|non-peptidic growth hormone secretagogues|ibutamoren
+3529|mostim|-mostim||N|S|(see -stim)|
+3529|motine|-motine||N|S|antivirals (quinoline derivatives)|famotine
+3529|moxin|-moxin||N|S|monoamine oxidase inhibitors (hydrazine derivatives)|benmoxin
+3529|mulin|-mulin||N|S|antibacterials, pleuromulin derivatives|retapamulin
+3529|multin|-multin||N|S|mucosal tolerance inductors|ismomultin
+3529|murtide|-murtide||N|S|(see -tide)|
+3529|mustine|-mustine||N|S|antineoplastics (chloroethylamine derivatives)|carmustine
+3529|mycin|-mycin||N|S|antibiotics (Streptomyces strain)|lincomycin
+3529|nabant|-nabant||N|S|(see -nab)|
+3529|nab|-nab-||N|I|cannabinol derivatives|nabazenil
+3529|nab|-nab||N|S|cannabinol derivatives|nabazenil
+3529|nab|nab-||N|P|cannabinol derivatives|nabazenil
+3529|nacept|-nacept||N|S|(see -cept)|
+3529|nakalant|-nakalant||N|S|see -kalant|vernakalant
+3529|nakinra|-nakinra||N|S|(see -kinra)|
+3529|nakin|-nakin||N|S|(see -kin)|
+3529|nal|-nal-||N|I|narcotic agonists/antagonists (normorphine type)|nalmefene, methylnaltrexone bromide
+3529|nal|nal-||N|P|narcotic agonists/antagonists (normorphine type)|nalmefene, methylnaltrexone bromide
+3529|napanor|-napanor||N|S|sodium-hydrogen antiporter (also called sodium-proton exchanger) inhibitors|tenapanor
+3529|napant|-napant||N|S|inhibitor of apoptosis protein (IAP) inhibitors|birinapant
+3529|navir|-navir||N|S|(see vir-)|
+3529|nemdaz|-nemdaz||N|S|N-methyl D-aspartate (NMDA) receptor antagonists (N2B subunit)|ristenemdaz
+3529|nepag|-nepag||N|S|non-prostanoid prostaglandin receptor agonists|evatanepag
+3529|nercept|-nercept||N|S|(see -cept)|
+3529|nermin|-nermin||N|S|(see -ermin)|
+3529|nertant|-nertant||N|S|(see -tant)|
+3529|nesib|-nesib||N|S|kinesin inhibitors|ispinesib
+3529|netant|-netant||N|S|(see -tant)|
+3529|netide|-netide||N|S|(see -tide)|
+3529|neurin|-neurin||N|S|neurotensin receptor antagonists; neurotropins|abrineurin
+3529|nexor|-nexor||N|S|nuclear export inhibitors|selinexor, verdinexor
+3529|nicline|-nicline||N|S|nicotinic acetylcholine receptor partial agonists/agonists|altinicline
+3529|nidap|-nidap||N|S|nonsteroidal anti-inflammatory agents (tenidap type)|ilonidap
+3529|nidazole|-nidazole||N|S|antiprotozoal substances (metronidazole type)|tinidazole
+3529|nifur|nifur-||N|P|5-nitrofuran derivatives|nifuratel
+3529|nixin|-nixin||N|S|anti-inflammatory agents (anilinonicotinic acid derivatives)|clonixin
+3529|nod|-nod||N|S|nitrogen oxide (eg., nitrxyl and nitric oxide) donors|cimlanod, naproxcinod
+3529|nonakin|-nonakin||N|S|(see -kin)|
+3529|octakin|-octakin||N|S|(see -kin)|
+3529|oligide|-oligide||N|S|decoy oligodeoxynucleotides (ODNs)|brivoligide
+3529|olol|-olol||N|S|beta-blockers (propranolol type)|timolol
+3529|olone|-olone||N|S|steroids (not prednisolone derivatives)|minaxolone
+3529|omab|-omab||N|S|(see -mab)|
+3529|onakin|-onakin||N|S|(see -kin)|
+3529|onide|-onide||N|S|topical steroids (acetal derivatives)|amcinonide
+3529|onium|-onium||N|S|(see -ium)|
+3529|opilone|-opilone||N|S|epothilones|sagopilone
+3529|opran|-opran||N|S|opioid receptor antagonists|bevenopran
+3529|orexant|-orexant||N|S|(see -orex)|
+3529|orex|-orex||N|S|anorexiants|fludorex
+3529|orphan|-orphan-||N|I|narcotic antagonists/agonists (morphinan derivatives)|dextromethorphan
+3529|orphan|-orphan||N|S|narcotic antagonists/agonists (morphinan derivatives)|dextromethorphan
+3529|osuran|-osuran||N|S|urotensin receptor antagonists|palosuran
+3529|otermin|-otermin||N|S|(see -ermin)|
+3529|otilate|-otilate||N|S|hepatoprotectants, di-isopropyl (1,3-dithiol-2-ylidene) propanedioate and related compounds|mivotilate
+3529|oxacin|-oxacin||N|S|antibacterials (quinolone derivatives)|ciprofloxacin
+3529|oxan(e)|-oxan(e)|(e)|N|S|alpha-adrenoceptor antagonists (benzodioxane derivatives)|imiloxan,pentamoxane
+3529|oxanide|-oxanide||N|S|antiparasitics (salicylanilide derivatives)|bromoxanide
+3529|oxef|-oxef||N|S|antibiotics (oxacefalosporanic acid derivatives)|flomoxef
+3529|oxetine|-oxetine||N|S|antidepressants (fluoxetine type)|dapoxetine
+3529|oxin|-oxin||N|S|fluoroquinolone derivatives, nonantibacterial indication (e.g., antineoplastic antibiotics)|voreloxin
+3529|padon|-padon||N|S|dopamine D1-like receptor (e.g., D1 and D5 subtypes) agonists/partial agonists|tavapadon
+3529|pafant|-pafant||N|S|platelet-activating factor antagonists|dacopafant
+3529|pamide|-pamide||N|S|diurectics (sulfamoylbenzoic acid derivatives)|alipamide
+3529|pamil|-pamil||N|S|coronary vasodilators (verapamil type)|verapamil
+3529|pamine|-pamine||N|S|dopaminergics (butopamine type)|fosopamine
+3529|pansel|-pansel||N|S|selectin antagonists inhibiting all selectin types|rivapansel
+3529|parantag|-parantag||N|S|antagonists of heparin and/or low molecular weight  heparins|delparantag
+3529|paratide|-paratide||N|S|(see -tide)|
+3529|parcin|-parcin||N|S|glycopeptide antibiotics|avoparcin
+3529|parib|-parib||N|S|poly-ADP-ribose polymerase inhibitors|olaparib
+3529|parinux|-parinux||N|S|antihrombotic indirect selective synthetic factor Xa inhibitors|fondaparinux
+3529|parin|-parin||N|S|heparin derivatives and low molecular weight (or depolymerized) heparins|heparin
+3529|paroid|-paroid||N|S|antithrombotics (heparinoid type)|danaparoid
+3529|parstat|-parstat||N|S|(see -stat)|
+3529|patrilat|-patrilat||N|S|(see -tril, -trilat)|
+3529|patril|-patril||N|S|(see -tril, -trilat)|
+3529|paxar|-paxar||N|S|Protease-activated receptor 1 (PAR1) antagonists|vorapaxar
+3529|peg|-peg-||N|I|PEGylated compounds, covalent attachment of macrogol (polyethylene glycol) polymer|lipegfilgrastim
+3529|peg|peg-||N|P|PEGylated compounds, covalent attachment of macrogol (polyethylene glycol) polymer|lipegfilgrastim
+3529|penem|-penem||N|S|antibacterial  antibiotics, carbapenem derivatives|tomopenem
+3529|penkin|-penkin||N|S|(see -kin)|
+3529|perflu|perflu-||N|P|blood substitutes and/or diagnostics (perfluorochemicals)|perflubron
+3529|peridol|-peridol||N|S|(see -perone)|
+3529|peridone|-peridone||N|S|(see -perone)|
+3529|perit|-perit||N|S|neuropeptide Y5 antagonists|velneperit
+3529|perone|-perone||N|S|antianxiety agents/neuroleptics (4'-fluoro-4-piperidinobutyrophenone derivatives)|duoperone
+3529|pertin|-pertin||N|S|glycine transporter/reuptake inhibitors|bitopertin
+3529|pezil|-pezil||N|S|acetylcholinesterase inhibitors used in the treatment of Alzheimer's disease|icopezil
+3529|pidem|-pidem||N|S|hypnotics/sedatives (zolpidem type)|zolpidem
+3529|pin(e)|-pin(e)|(e)|N|S|tricyclic compounds|doxepin, amoxapine, darenzepine
+3529|piprant|-piprant||N|S|prostaglandin receptor antagonists, non prostinoid structure|laropiprant
+3529|pirdine|-pirdine||N|S|serotonin 5-HT6 receptor inhibitors|linopirdine
+3529|pirox|-pirox||N|S|antimycotics (pyridone derivatives)|ciclopirox
+3529|pitant|-pitant||N|S|(see -tant)|
+3529|pivat|-pivat||N|S|pyruvate kinase activators|mitapivat
+3529|plact|-plact||N|S|platelet factor 4 analogs and derivatives|iroplact
+3529|pladib|-pladib||N|S|phospholipase A2 inhibitors|ecopladib
+3529|planin|-planin||N|S|antibacterials (Actinoplanes strains)|mideplanin
+3529|plasinin|-plasinin||N|S|inhibitors of plasminogen activator inhibitors - type 1|tiplasinin
+3529|plasmin|-plasmin||N|S|plasmin proteins and derivatives|ocriplasmin
+3529|platin|-platin||N|S|antineoplastics (platinum derivatives)|cisplatin
+3529|plenib|-plenib||N|S|Spleen tyrosine kinase (Syk) inhibitors|Lanraplenib, entosplenib
+3529|plermin|-plermin||N|S|(see -ermin)|
+3529|plestim|-plestim||N|S|(see -stim)|
+3529|plon|-plon||N|S|non-benzodiazepine anxiolytics, sedatives, hypnotics|ocinaplon, zaleplon
+3529|podect|-podect||N|S|phosphodiesterase 10 (PDE10) inhibitors|mardepodect
+3529|poetin|-poetin||N|S|erythropoietins|epoetin alfa
+3529|porfin|-porfin||N|S|benzoporphyrin derivatives|verteporfin
+3529|potide|-potide||N|S|(see -tide)|
+3529|pramine|-pramine||N|S|antidepressants (imipramine type)|lofepramine
+3529|prazan|-prazan||N|S|proton pump inhibitors, not dependent on acid activation|revaprazan
+3529|prazole|-prazole||N|S|antiulcer agents (benzimidazole derivatives)|omeprazole
+3529|pred|-pred-||N|I|prednisone and prednisolone derivatives|prednicarbate
+3529|pred|-pred||N|S|prednisone and prednisolone derivatives|prednicarbate
+3529|pred|pred-||N|P|prednisone and prednisolone derivatives|prednicarbate
+3529|pressin|-pressin||N|S|vasoconstrictors (vasopressin derivatives)|desmopressin
+3529|previr|-previr||N|S|(see -vir)|
+3529|pride|-pride||N|S|Sulpiride derivatives and analogs|remoxipride
+3529|prilat|-prilat||N|S|(see -pril)|
+3529|pril|-pril-||N|I|antihypertensives (ACE inhibitors)|enalapril
+3529|pril|-pril||N|S|antihypertensives (ACE inhibitors)|enalapril
+3529|prim|-prim||N|S|antibacterials (trimethoprim type)|ormetoprim
+3529|prinim|-prinim||N|S|nootropic agents (learning/cognitive enhancers), purine derivatives|leteprinim
+3529|prisnil|-prisnil||N|S|selective progesterone receptor modulators (SPRM)|asoprisnil
+3529|pristin|-pristin||N|S|antibacterials, pristinamycin derivatives|quinupristin
+3529|pristone|-pristone||N|S|progesterone receptor antagonists|mifepristone
+3529|pris|-pris-||N|I|steriodal compounds acting on progesterone receptors (excluding -gest- compounds)|lonaprisan, vilaprisan
+3529|profen|-profen||N|S|anti-inflammatory/analgesic agents (ibuprofen type)|flurbiprofen
+3529|proget|-proget||N|S|nonsteroidal ligand for the progesterone receptor|tanaproget
+3529|prost|-prost-||N|I|prostaglandins|rioprostil
+3529|prost|-prost||N|S|prostaglandins|rioprostil
+3529|protafib|-protafib||N|S|protein tyrosine phosphatase 1B inhibitors|ertiprotafib
+3529|pultide|-pultide||N|S|(see -tide)|
+3529|punil|-punil||N|S|mitochondrial benzodiazepine receptor (MBR) selective, partial, or inverse agonists (purine derivatives)|emapunil
+3529|quantel|-quantel||N|S|(see -antel)|
+3529|queside|-queside||N|S|cholesterol sequestrants (glycosides)|pamaqueside
+3529|quidar|-quidar||N|S|(see -dar)|
+3529|quiline|-quiline||N|S|antibiotics, diarylquinoline structure|bedaquiline
+3529|quinil|-quinil||N|S|benzodiazepine receptor agonists, partial agonists, inverse agonists (quinolone derivatives)|lirequinil
+3529|quistat|-quistat||N|S|(see -stat)|
+3529|racetam|-racetam||N|S|nootropic agents (learning, cognitive enhancers), piracetam type|piracetam
+3529|racil|-racil||N|S|uracil type antineoplastics|eniluracil
+3529|rafenib|-rafenib||N|S|rapidly accelerated fibrosarcoma (RAF) kinase inhibitors|sorafenib
+3529|ragone|-ragone||N|S|receptor for advanced glycation endproducts (RAGE) inhibitors|azeliragone
+3529|relin|-relin||N|S|prehormones or hormone-release stimulating peptides|nafarelin
+3529|relix|-relix||N|S|hormone-release inhibiting peptides|detirelix
+3529|renone|-renone||N|S|aldosterone antagonists (spironolactone type)|canrenone
+3529|reotide|-reotide||N|S|(see -tide)|
+3529|restat|-restat||N|S|(see -stat)|
+3529|retin|-retin-||N|I|retinol derivatives|etretinate
+3529|retin|-retin||N|S|retinol derivatives|etretinate
+3529|rian|-rian||N|S|ryanodine receptor modulators|aladorian
+3529|ribine|-ribine||N|S|ribofuranil derivatives (pyrazofurin type)|loxoribine
+3529|rifa|rifa-||N|P|antibiotics (rifamycin derivatives)|rifapentine
+3529|rinone|-rinone||N|S|cardiotonics (amrinone type)|milrinone
+3529|ritide|-ritide||N|S|(see -tide)|
+3529|rixin|-rixin||N|S|chemokine (C-X-C motif) receptor 2 (CXCR2) modulators|reparixin
+3529|rocin|-rocin||N|S|t-RNA synthetase inhibitors|bederocin
+3529|rolimus|-rolimus||N|S|(see -imus)|
+3529|rozole|-rozole||N|S|aromatase inhibitors (imidazole/triazole derivatives)|letrozole
+3529|rsen|-rsen||N|S|antisense oligonucleotides|alicaforsen
+3529|rubicin|-rubicin||N|S|antineoplastic antibiotics (daunorubicin type)|esorubicin
+3529|sal|-sal-||N|I|anti-inflammatory agents (salicyclic acid derivatives)|mesalamine
+3529|sal|-sal||N|S|anti-inflammatory agents (salicyclic acid derivatives)|mesalamine
+3529|sal|sal-||N|P|anti-inflammatory agents (salicyclic acid derivatives)|mesalamine
+3529|sap|-sap||N|S|serum amyloid P (SAP) inhibitors|miridesap
+3529|sarm|-sarm||N|S|selective androgen receptor modulator (non-steroidal)|enobosarm
+3529|sartan|-sartan||N|S|angiotensin II receptor antagonists|losartan
+3529|selan|-selan||N|S|E-selectin antagonists|uproleselan
+3529|semide|-semide||N|S|diuretics (furosemide type)|azosemide
+3529|semtiv|-semtiv||N|S|skeletal muscle troponin activator|tirasemtiv
+3529|sermin|-sermin||N|S|(see -ermin)|
+3529|serod|-serod||N|S|serotonin receptor antagonists and partial agonists|piboserod
+3529|serpine|-serpine||N|S|Rauwolfia alkaloid derivatives|reserpine
+3529|sertib|-sertib||N|S|serine/threonine kinase inhibitors|danusertib
+3529|setrag|-setrag||N|S|serotonin 5-HT receptor agonists, not principally 5-HT2|pumosetrag
+3529|setron|-setron||N|S|serotonin 5-HT3 receptor antagonists|ondansetron
+3529|siban|-siban||N|S|oxytocin antagonists|barusiban
+3529|sidenib|-sidenib||N|S|isocitrate dehydrogenase (IDH) inhibitors|enasidenib
+3529|sidomine|-sidomine||N|S|antianginals (sydnone derivatives)|molsidomine
+3529|sidone|-sidone||N|S|antipsychotic with binding activity on sertonin (5-HT2A) and dopamine (D2) receptors|lurasidone
+3529|siptor|-siptor||N|S|Src homology 2-containing inositol-5' phosphatase 1 (SHIP1) activators|rosiptor
+3529|siran|-siran-||N|I|small interfering RNA (siRNA)|patisiran
+3529|som|som-||N|P|growth hormone derivatives|somatrem
+3529|sonan|-sonan||N|S|serotonin 5-HT1B receptor inhibitors|elzasonan
+3529|spirone|-spirone||N|S|anxiolytics (buspirone type)|zalospirone
+3529|spodar|-spodar||N|S|(see -dar)|
+3529|sporin|-sporin||N|S|(see -closporin)|
+3529|sporivir|-sporivir||N|S|(see -vir)|
+3529|statin|-statin||N|S|(see -stat)|
+3529|stat|-stat-||N|I|enzyme inhibitors|
+3529|stat|-stat||N|S|1)kallikrein inhibitors or 2) serineprotease inhibitors 3) glutaminase inhibitor|Avoralstat, berotralstat
+3529|steride|-steride||N|S|testosterone reductase inhibitors|epristeride
+3529|ster|-ster-||N|I|steroids (androgens, anabolics)|norgesterone
+3529|stigmine|-stigmine||N|S|cholinesterase inhibitors (physostigmine type)|quilostigmine
+3529|stim|-stim||N|S|colony-stimulating factors|ancestim
+3529|stinel|-stinel||N|S|(N-methyl-D-asparate) NMDA receptor antagonist, glycine recognition site|licostinel
+3529|sulam|-sulam||N|S|antineoplastics, apoptosis inducing sulfonamide|indisulam
+3529|sulfan|-sulfan||N|S|antineoplastics, alkylating agents (methanessulfonate derivatives)|busulfan
+3529|sulfa|sulfa-||N|P|antimicrobials (sulfonamides derivatives)|sulfasalazine
+3529|sulind|-sulind||N|S|antineoplastics, pro-apoptotic cGMP phosphodiesterase inhibitors, sulindac metabolites|exisulind
+3529|tacept|-tacept||N|S|(see -cept)|
+3529|tansine|-tansine||N|S|maytansinoid derivatives|mertansine
+3529|tant|-tant||N|S|tachykinin (neurokinin) receptor antagonists|
+3529|tapide|-tapide||N|S|microsomal triglyceride transfer protein (MTP) inhibitors|implitapide
+3529|taxel|-taxel||N|S|antineoplastics, taxane derivatives|paclitaxel
+3529|tecan|-tecan||N|S|antineoplastics (camptothecin derivatives)|topotecan
+3529|tecarin|-tecarin||N|S|antineoplastics (rebeccamycin derivatives)|becatecarin
+3529|tegrast|-tegrast||N|S|(see -ast)|
+3529|tegravir|-tegravir||N|S|(see -vir)|
+3529|telstat|-telstat||N|S|(see -stat)|
+3529|tepa|-tepa||N|S|antineoplastics (thiotepa derivatives)|azetepa
+3529|teplase|-teplase||N|S|(see -ase)|
+3529|tercept|-tercept||N|S|(see -cept)|
+3529|termin|-termin||N|S|(see -ermin)|
+3529|terol|-terol||N|S|bronchodilators (phenethylamine derivatives)|albuterol
+3529|terone|-terone||N|S|antiandrogens|abiraterone, testerone
+3529|tesind|-tesind||N|S|thymidylate synthase inhibitors (benzindole derivatives)|metesind
+3529|thiazide|-thiazide||N|S|diuretics (thiazide derivatives)|sodium chlorothiazide
+3529|tiapine|-tiapine||N|S|antipsychotics (dibenzothiazepine derivatives)|metiapine
+3529|tiazem|-tiazem||N|S|calcium channel blockers (diltiazem type)|clentiazem
+3529|tibant|-tibant||N|S|antiasthmatics (bradykinin antagonists)|icatibant
+3529|tide|-tide||N|S|Oxyntomodulin analogs|pegefinodutide
+3529|tidine|-tidine||N|S|H2-receptor antagonists (cimetidine type)|lupitidine
+3529|tinib|-tinib||N|S|tyrosine kinase inhibitors|erlotinib
+3529|tiostat|-tiostat||N|S|(see -stat)|
+3529|tioxetine|-tioxetine||N|S|(see -oxetine)|
+3529|tirelin|-tirelin||N|S|(see -relin)|
+3529|tirimod|-tirimod||N|S|(see -imod)|
+3529|tirom|-tirom||N|S|ntihyperlipidemic, thyromimetic derivatives|
+3529|tocin|-tocin||N|S|oxytocin derivatives|oxytocin
+3529|toclax|-toclax||N|S|bcl-2 (B-cell lymphoma 2) inhibitors|obatoclax
+3529|toin|-toin||N|S|antiepileptics (hydantoin derivatives)|albutoin
+3529|tolimod|-tolimod||N|S|(see -imod)|
+3529|toran|-toran||N|S|Toll-like receptor antagonists|eritoran
+3529|trakinra|-trakinra||N|S|(see -kinra)|
+3529|trakin|-trakin||N|S|(see -kin)|
+3529|traline|-traline||N|S|selective serotonin reuptake inhibitors (SSRI)|sertraline
+3529|trectinib|-trectinib||N|S|(see -tinib)|
+3529|treg|-treg-||N|I|cellular therapy T regulatory cells|cirotregcel
+3529|trep|-trep||N|S|transient receptor potential antagonists|mavatrep
+3529|trexate|-trexate||N|S|antimetabolites (folic acid derivatives)|methotrexate
+3529|trexed|-trexed||N|S|antineoplastic thymidylate synthetase inhibitors|nolatrexed
+3529|tricin|-tricin||N|S|antibiotics (polyene derivatives)|mepartricin
+3529|trigine|-trigine||N|S|sodium channel blockers, signal transduction modulators|lamotrigine, raxatrigine
+3529|trilat|-trilat||N|S|endopeptidase inhibitors|candoxatril
+3529|tril|-tril||N|S|endopeptidase inhibitors|candoxatril
+3529|triptan|-triptan||N|S|antimigraine agents (5-HT1 receptor agonists); sumatriptan derivatives|naratriptan
+3529|triptyline|-triptyline||N|S|antidepressants (dibenzol[a,d]cycloheptane derivatives)|amitriptyline
+3529|tristat|-tristat||N|S|(see -stat)|
+3529|troban|-troban||N|S|antithrombotics (thromboxane A2 receptor antagonists)|daltroban
+3529|trodast|-trodast||N|S|(see -ast)|
+3529|troline|-troline||N|S|antipsychotics (dopamine D2 antagonists)|carvotroline
+3529|trombopag|-trombopag||N|S|thrombopoetin agonists|eltrombopag
+3529|trop|-trop-||N|I|atropine derivatives|benztropine
+3529|trop|-trop||N|S|atropine derivatives|benztropine
+3529|trop|trop-||N|P|atropine derivatives|benztropine
+3529|umab|-umab||N|S|(see -mab)|
+3529|unistat|-unistat||N|S|(see -stat)|
+3529|uplase|-uplase||N|S|(see -ase)|
+3529|uracil|-uracil||N|S|uracil derivatives used as thyroid antagonists and as antineoplastics|fluorouracil
+3529|urad|-urad||N|S|urate transporter e.g., urate anion exchanger 1 (URAT1) inhibitors|lesinurad
+3529|urestat|-urestat||N|S|(see -stat)|
+3529|uridine|-uridine||N|S|antivirals; antineoplastics (uridine derivatives)|idoxuridine
+3529|vancin|-vancin||N|S|vancomycin-related compounds|dalbavancin
+3529|vaptan|-vaptan||N|S|vasopressin receptor antagonists|conivaptan
+3529|vatrep|-vatrep||N|S|vanilloid 1 receptor antagonists|mavatrep
+3529|verine|-verine||N|S|spasmolytic agents (papaverine type)|mebeverine
+3529|vin|-vin-||N|I|vinca alkaloids|vinepidine
+3529|vin|vin-||N|P|vinca alkaloids|vinepidine
+3529|viroc|-viroc||N|S|Antivirals, chemokine receptor (CCR) antagonists|maraviroc
+3529|virsen|-virsen||N|S|(see -rsen)|
+3529|vir|-vir-||N|I|antivirals|ganciclovir
+3529|vir|-vir||N|S|antivirals, glutaminase inhibitor|ganciclovir
+3529|vir|vir-||N|P|antivirals|ganciclovir
+3529|vivint|-vivint||N|S|Wnt (Wingless/Int-1) signaling pathway inhibitor|adavivint
+3529|vudine|-vudine||N|S|antineoplastics; antivirals (zidovudine group) (exception: edoxudine)|stavudine
+3529|xaban|-xaban||N|S|antithrombotics, blood coagulation factor XA inhibitors|tamixaban
+3529|xafor|-xafor||N|S|CXCR receptor antagonists|
+3529|xanox|-xanox||N|S|antiallergic respiratory tract drugs (xanoxic acid derivatives)|tixanox
+3529|xetan|-xetan||N|S|chelating agents|yttrium (90y) clivatuzumab tetraxetan
+3529|ximab|-ximab||N|S|(see -mab)|
+3529|xostat|-xostat||N|S|(see -stat)|
+3529|zolamide|-zolamide||N|S|carbonic anhydrase inhibitors|brinzolamide
+3529|zolast|-zolast||N|S|(see -ast)|
+3529|zolid|-zolid||N|S|oxazolidinone antibacterials|eperezolid
+3529|zomib|-zomib||N|S|proteozome inhibitors|bortezomib
+3529|zotan|-zotan||N|S|5-HT1A receptor agonists/antagonists acting primarily as neuroprotectors|robalzotan
+3529|zotide|-zotide||N|S|(see -tide)|
+3529|zumab|-zumab||N|S|(see -mab)|
+3529|bep|-bep||N|S|Bioengineered proteins|Taldefgrobep
+3529|caprant|-caprant||N|S|Kappa opioid receptor antagonists|Aticaprant
+3529|fimloc|-fimloc||N|S|FimH (E. coli) blockers|Sibofimloc
+3529|taront|-taront||N|S|Trace amine associated receptor (TAAR) agonists|Ralmitaront
+3529|xian|-xian||N|S|Coagulation factor XIa inhibitors|Milvexian
+3529|alcap|-alcap||N|S|allosteric modulators of small-conductance calcium activated potassium (SK) channels|rimtuzalcap
+3529|fenicol|-fenicol||N|S|antibacterial antibiotics, chloramphenicol analogs|florfenicol
+3529|ifan|-ifan||N|S|hypoxia-inducible factor (HIF) inhibitors|belzutifan
+3529|irine|-irine||N|S|cytotoxic pyrrolobenzodiazepine dimers and analogs|talirine, tesirine
+3529|loride|-loride||N|S|epithelial sodium channel (ENaC) inhibitors, amiloride derivatives|amiloride
+3529|nontrine|-nontrine||N|S|phosphodiesterase type 9 (PDE9) inhibitors|irsenontrine
+3529|podun|-podun||N|S|phosphodiesterase type 1 (PDE1) ihibitors|lenrispodun
+3529|pterin|-pterin||N|S|pteridine derivatives|sapropterin, fosdenopterin
+3529|sopasem|-sopasem||N|S|superoxide dismutase (SOD) mimetics|avasopasem manganese, imisopasem manganese
+3529|terkib|-terkib||N|S|extracellular signal regulated kinase (ERK) types 1 and 2 inhibitors|tineterkib

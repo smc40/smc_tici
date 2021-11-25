@@ -1,212 +1,75 @@
-import os
 import sys
-import re
 import pandas as pd
-from difflib import SequenceMatcher
+from pandas import DataFrame
 from typing import List
-import importlib
-import pathlib
 
-cologne = importlib.import_module("cologne_phonetics")
-
-
-#_MYPATH = '/home/alexsmc/poca/'
-#_MYPATH = '/Users/nicolasperez/PycharmProjects/app_poca/'
-#_MYPATH = 'C:/Users/pen/PycharmProjects/poca_app/'
-# _MYPATH = 'C:/Users/pen/PycharmProjects/poca_app/'
-
-# IN PROD PATH
-localpath = pathlib.Path().resolve()
-_MYPATH = str(localpath) + '/'
-print(_MYPATH)
+from backend.comparison_utils import orthographic_comparison, phonetic_comparison
+from backend.load_files import read_medicament_file, _MYPATH
 
 
-def orthographic_comparison(searched_string, element_list, option):
-    '''
-    This function takes a "searched_string" which is the name that we interested in and compares it
-    against the "element_list" which are the names that are pulled from the large datasets. Short said,
-    we are interested for example in the name "MAVIX", and compare again the entire list one by one
-
-    :param searched_string: medicament name that we are interested in
-    :param element_list: medicament names from the databases
-    :param option: given phonetic technic for comparison
-    :return: phonetic_score: which is the estimation of the phonetic matching
-    '''
-
-    if option == 'SequenceMatcher':
-        ratio = SequenceMatcher(None, searched_string, element_list).ratio()
-    return ratio
-
-
-def phonetic_comparison(searched_string, element_list, option):
-    '''
-    drug_testname = searched_string
-    drug_found = element_list
-
-    This function takes a "searched_string" which is the name that we interested in and compares it
-    against the "element_list" which are the names that are pulled from the large datasets. Short said,
-    we are interested for example in the name "MAVIX", and compare again the entire list one by one
-
-    :param searched_string: medicament name that we are interested in
-    :param element_list: medicament names from the databases
-    :param option: given phonetic technic for comparison
-    :return: phonetic_score: which is the estimation of the phonetic matching
-    '''
-    ratio = -1
-    if option == 'Kolner':
-        drug_interest = cologne.encode(searched_string.upper())[0][1]
-        drug_in_our_list = cologne.encode(element_list.upper())[0][1]
-        ratio = SequenceMatcher(None, drug_interest, drug_in_our_list).ratio()
-
-        phonetic_score = float(round(ratio, 2))
-
-    return phonetic_score
-
-
-def match_seq_against_list(datamatched, database: List, name_source: str, searched_string, threshold):
+def match_seq_against_list(datamatched, database: List, name_source: str, searched_word, threshold: float):
 
     for each in database:
-        ratio = orthographic_comparison(searched_string, each, 'SequenceMatcher')
+        ratio = orthographic_comparison(searched_word, each, 'SequenceMatcher')
 
-        ratio_phonetic = phonetic_comparison(searched_string, each, 'Kolner')
+        ratio_phonetic = phonetic_comparison(searched_word, each, 'Kolner')
 
-        print('this is threshold')
-        print(threshold)
-        if ratio >= (float(threshold) / 100) or ratio_phonetic >= (float(threshold) / 100) :
+        ratio_combined = ( ratio + ratio_phonetic ) / 2
+        if ratio_combined >= (float(threshold)/ 100):
             datamatched.append([each, round(ratio * 100), round(ratio_phonetic * 100), name_source])
 
     return datamatched
 
 
 def collapse_sources(df_drugs_identified):
-        '''
-        Function joins sources when medicamente is identified multiple times
-
-        :return: dataframe with deduplicated rows
-        '''
-        # Concatenate string
-        df_drugs_identified['dataset'] = df_drugs_identified.groupby(
-            ['name'])[['dataset']].transform(lambda x: ', '.join(x))
-        # drop duplicate data
-        df_drugs_identified = df_drugs_identified.drop_duplicates()
-
-        return df_drugs_identified
-
-
-def read_medicament_file(chosen_sources: List):
     """
-    read_medicament_file reads files from any of the four sources ['fda','rxnorm','usan','swissmedic']
+    Function joins sources when a medicament is identified multiple times
 
-    Input:
-    chosen_sources: List with any number out of the possible sources ['fda','rxnorm','usan','swissmedic']
-
-    Return:
-    File: read individual file for that specific source.
+    :return: dataframe with deduplicated rows
     """
-    if chosen_sources == 'fda':
-        # Read file for comparison
-        filepath = _MYPATH + 'static/drugsatfda_20210527.csv'
-        data = pd.read_csv(filepath, header=None, delimiter="|")
-        name = pd.Series(data.iloc[:, [1, 4]].to_numpy().flatten())
-        name = name.drop_duplicates()
-        name = name.dropna().to_list()
-        print("Number of drugs at the FDA database: ", len(name))
-
-    if chosen_sources == 'usan':
-        filepath = _MYPATH+'static/drugs_usan_20210227.csv'
-        data = pd.read_csv(filepath, header='infer', delimiter="|")
-        name = data.EXAMPLE.to_numpy().flatten()
-        name = pd.Series(name).drop_duplicates()
-        name = name.dropna()
-        name = name.to_list()
-        print("Number of drugs USAN database: ", len(name))
-
-    if chosen_sources == 'rxnorm':
-        filepath = _MYPATH+'static/drugs_rxnorm_20210510.csv'
-        data = pd.read_csv(filepath, header=None, delimiter="|")
-        name = data.iloc[:, 1].to_numpy().flatten()
-        name = pd.Series(name).drop_duplicates()
-        name = name.dropna().to_numpy()
-        list_output = [drug.upper() for drug in name]
-        print("Number of drugs at the RxNorm database: ", len(list_output))
-        return list_output
-
-    if chosen_sources == 'swissmedic':
-        # filepath = _MYPATH+'static/Swissmedic_20191012_import.csv'
-        # data = pd.read_csv(filepath, header=None, delimiter="|", encoding='latin1')
-        # name = data.iloc[:, 1].to_numpy().flatten()
-        # name = pd.Series(name).drop_duplicates()
-        # name = name.dropna().to_numpy()
-        # list_output = [drug.upper() for drug in name]
-        # print("Number of drugs at the Swissmedic database: ", len(list_output))
-
-        filepath = _MYPATH+'static/swissmedic_zugelassene_arzneimittel_20210909_public.xlsx'
-        data = pd.read_excel(filepath, skiprows=6, header=0)
-        col_compounds = 'Bezeichnung des Arzneimittels\n\n\nDénomination du médicament'
-
-        def extract_drug_name(text):
-            # print(f'\nCompounds original name:\n{text}')
-            split_char = ','
-            compound_raw = text.split(split_char)[0]
-            pattern = r' [0-9]*'
-            compound_wo_alone_numbers = re.sub(pattern, ' ', compound_raw)
-            pattern2 = r'/[0-9]*'
-            compound_number_filtered = re.sub(pattern2, ' ', compound_wo_alone_numbers)
-
-            stopwords = ['adultes', 'enfants', 'n', 'p', 's', 'u', 'e.', 'ie', '%', 'i.e.', "'000", "'250", '.25',
-                         'mg', 'ml', 'zum', 'einnehmen', 'für', 'erwachsene', 'und', 'kinder', 'ab',
-                         'jahren', 'äusserlich', 'a', 'con', 'mcg', '.1', '.2', '.4', '.5', '.6', '.8', 'g',
-                         'agenti', 'conservanti', 'nr.', 'b', 'c', '.1%', '.25%', '.5%', 'gefärbt', 'ungefärbt',
-                         '.0', '.75', 'mmol', 'l', 'Ca', '.3%', 'ug']
-            words_within_medicament = compound_number_filtered.split()
-            result_words = [word for word in words_within_medicament if word.lower() not in stopwords]
-            compound_filtered = ' '.join(result_words)
-
-            if compound_filtered[0] == '-':
-                compound_filtered = compound_filtered[1:]
-
-            return compound_filtered
-
-        data['drug_name'] = data[col_compounds].apply(extract_drug_name)
-        name = data['drug_name'].to_numpy().flatten()
-        name = pd.Series(name).drop_duplicates()
-        name = name.dropna().to_numpy()
-        list_output = [drug.upper() for drug in name]
-        print("Number of drugs at the Swissmedic database: ", len(list_output))
-
-        return list_output
-
-    return name
+    # Concatenate string
+    df_drugs_identified['dataset'] = df_drugs_identified.groupby(
+                                                    ['name'])[['dataset']].transform(lambda x: ', '.join(x))
+    # drop duplicate data
+    df_drugs_identified = df_drugs_identified.drop_duplicates()
+    return df_drugs_identified
 
 
-def search(searched_string: str, sources, threshold: str = "0.5") -> pd.DataFrame:
+def verify_dataframe_has_items(results: DataFrame):
+    if len(results) > 0:
+        return results
+    else:
+        results = results.append({'name': 'No object found',
+                                  'grammatik': 0,
+                                  'phonetik': 0,
+                                  'dataset': 'none',
+                                  'combined': 0}, ignore_index=True)
+        return results
 
-    # Write word in caps
-    searched_string = str(searched_string).upper()
-    print("Drug under evaluation: ", searched_string)
 
-    # Initialize 'data_matched'
+def search(searched_word: str, sources, threshold: float = 50) -> pd.DataFrame:
+
+    # UPPERCASE SEARCHED WORD
+    searched_word = str(searched_word).upper()
+
+    # INITIALIZE 'data_matched' VARIABLE
     data_matched = []
 
-    print('These are the sources we want to look through: {}'.format(sources))
     for source_name in sources:
         read_list = read_medicament_file(source_name)
-        data_matched = match_seq_against_list(data_matched, read_list, source_name, searched_string, threshold)
+        data_matched = match_seq_against_list(data_matched, read_list, source_name, searched_word, float(threshold))
 
-    print('Data is already matched')
     res = pd.DataFrame(data_matched, columns=["name", "grammatik", "phonetik", "dataset"])
-    res = res.sort_values(by='grammatik', ascending=False)
     res['combined'] = res[['grammatik', 'phonetik']].mean(axis=1)
-    print('Flag: Data is already sorted')
+    res = res.sort_values(by='combined', ascending=False)
 
-    print(res.head(5))
+    # VERIFY IT IS EMPTY
+    res = verify_dataframe_has_items(res)
 
-    # Collapse sources, and de-dup
+    # COLLAPSE SOURCES AND DEDUPLICATE
     res = collapse_sources(res)
 
-    print(res.head(15))
-
-    res.to_csv(_MYPATH+'output/result_'+searched_string+'.csv', header=None)
+    res.to_csv(_MYPATH+'output/result_' + searched_word + '.csv', header=None)
     return res
 
 

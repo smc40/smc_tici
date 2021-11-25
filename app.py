@@ -1,13 +1,8 @@
 from flask import Flask, render_template, request
 import search
 from experiments import run_experiments
-
 app = Flask(__name__, template_folder='templates')
 
-# mypath = '/home/alexsmc/poca/'
-# mypath = '/Users/nicolasperez/PycharmProjects/app_poca'
-#mypath = 'C:/Users/pen/PycharmProjects/poca_app'
-mypath = 'C:/Users/pen/PycharmProjects/smc_tici/smc_tici'
 
 @app.route('/', methods=['POST', 'GET'])
 def index():
@@ -29,7 +24,6 @@ def experiments():
         experiment_02 = experiments[1].values
         experiment_03 = experiments[2].values
         experiment_04 = experiments[3].values
-        print(ortho_avg_diff)
 
     return render_template("experiments_version3.html",
                            ortho_avg_diff=ortho_avg_diff,
@@ -43,13 +37,11 @@ def experiments():
 @app.route('/search', methods=['POST'])
 def searcher():
 
-    print('in search')
     searchterm = request.form.get('searchterm')
     threshold = request.form.get('threshold')
 
     if request.method == 'POST':
-        print('DONE')
-        print(request.form.getlist('checkbox_sources'))
+        print(f'\nThis is the request form with the selected lists: {request.form.getlist("checkbox_sources")}')
         sources = request.form.getlist('checkbox_sources')
     else:
         return print('We tried')
