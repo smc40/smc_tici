@@ -48,13 +48,16 @@ def verify_dataframe_has_items(results: DataFrame):
 
 
 def search(searched_word: str, sources, threshold: float = 50) -> pd.DataFrame:
+    """
+    Main Search Function
+
+    """
 
     # UPPERCASE SEARCHED WORD
     searched_word = str(searched_word).upper()
 
     # INITIALIZE 'data_matched' VARIABLE
     data_matched = []
-
     for source_name in sources:
         read_list = read_medicament_file(source_name)
         data_matched = match_seq_against_list(data_matched, read_list, source_name, searched_word, float(threshold))

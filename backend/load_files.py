@@ -64,11 +64,17 @@ def read_medicament_file(chosen_sources: List):
             pattern2 = r'/[0-9]*'
             compound_number_filtered = re.sub(pattern2, ' ', compound_wo_alone_numbers)
 
-            stopwords = ['adultes', 'enfants', 'n', 'p', 's', 'u', 'e.', 'ie', '%', 'i.e.', "'000", "'250", '.25',
-                         'mg', 'ml', 'zum', 'einnehmen', 'für', 'erwachsene', 'und', 'kinder', 'ab',
-                         'jahren', 'äusserlich', 'a', 'con', 'mcg', '.1', '.2', '.4', '.5', '.6', '.8', 'g',
-                         'agenti', 'conservanti', 'nr.', 'b', 'c', '.1%', '.25%', '.5%', 'gefärbt', 'ungefärbt',
-                         '.0', '.75', 'mmol', 'l', 'Ca', '.3%', 'ug']
+            stopwords = ['a', 'b', 'c', 'g', 'n', 'p', 's', 'u', 'e.', 'ie', '%', 'i.e.',
+                         '.0', '.1', '.2', '.3', '.4', '.5', '.6', '.8', '.9', '.25', '.75', '9', '10', '15', '20',
+                         '25', '30', '35', '43', '50', '52', '160', '200', '240', '300', '320', '400', '800', '.1%', '.25%',
+                         '.3%', '.5%', '10%', '15%', '20%', "'000", "'250",
+                         'mcg', 'mg', 'ΜG', 'ml', 'mmol', 'l', 'ca', 'xr', 'ug', 'hg', 'cu', 'qu', 'arg.', 'c.',
+                         'mikrogramm',
+                         'gefärbt', 'ungefärbt', 'agenti', 'conservanti', 'nr.', 'adultes', 'enfants', 'zum',
+                         'einnehmen', 'für', 'erwachsene', 'und', 'kinder', 'ab', 'jahren', 'äusserlich', 'con',
+                         'spezifiziert', 'spécifié', 'extract', 'preparation'
+                         ]
+
             words_within_medicament = compound_number_filtered.split()
             result_words = [word for word in words_within_medicament if word.lower() not in stopwords]
             compound_filtered = ' '.join(result_words)
