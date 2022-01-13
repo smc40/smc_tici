@@ -1,6 +1,7 @@
 import importlib
 from typing import List
 from difflib import SequenceMatcher
+from abydos.phonetic import fonem, henry_early
 cologne = importlib.import_module("cologne_phonetics")
 
 
@@ -40,6 +41,18 @@ def phonetic_comparison(searched_word, element_list, option):
         drug_in_our_list = cologne.encode(element_list.upper())[0][1]
         ratio = SequenceMatcher(None, drug_interest, drug_in_our_list).ratio()
 
+        phonetic_score = float(round(ratio, 2))
+
+    if option == 'fr-fonem':
+        drug_interest = fonem(searched_word.upper())
+        drug_in_our_list = fonem(element_list.upper())
+        ratio = SequenceMatcher(None, drug_interest, drug_in_our_list).ratio()
+        phonetic_score = float(round(ratio, 2))
+
+    if option == 'fr-henry':
+        drug_interest = henry_early(searched_word.upper())
+        drug_in_our_list = henry_early(element_list.upper())
+        ratio = SequenceMatcher(None, drug_interest, drug_in_our_list).ratio()
         phonetic_score = float(round(ratio, 2))
 
     return phonetic_score

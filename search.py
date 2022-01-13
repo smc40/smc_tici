@@ -14,9 +14,18 @@ def match_seq_against_list(datamatched, database: List, name_source: str, search
 
         ratio_phonetic = phonetic_comparison(searched_word, each, 'Kolner')
 
-        ratio_combined = ( ratio + ratio_phonetic ) / 2
-        if ratio_combined >= (float(threshold)/ 100):
-            datamatched.append([each, round(ratio * 100), round(ratio_phonetic * 100), name_source])
+        ratio_fr_phonetic_fonem = phonetic_comparison(searched_word, each, 'fr-fonem')
+
+        ratio_fr_phonetic_henry = phonetic_comparison(searched_word, each, 'fr-henry')
+
+        ratio_combined = (ratio + ratio_phonetic) / 2
+        if ratio_combined >= (float(threshold)/100):
+            datamatched.append([each,
+                                round(ratio * 100),
+                                round(ratio_phonetic * 100),
+                                round(ratio_fr_phonetic_fonem * 100),
+                                round(ratio_fr_phonetic_henry * 100),
+                                name_source])
 
     return datamatched
 
@@ -40,10 +49,12 @@ def verify_dataframe_has_items(results: DataFrame):
         return results
     else:
         results = results.append({'name': 'No object found',
-                                  'grammatik': 0,
-                                  'phonetik': 0,
+                                  'gram': 0,
+                                  'phon': 0,
+                                  'phon-fr-1': 0,
+                                  'phon-fr-2': 0,
                                   'dataset': 'none',
-                                  'combined': 0}, ignore_index=True)
+                                  'comb': 0}, ignore_index=True)
         return results
 
 
@@ -62,12 +73,14 @@ def search(searched_word: str, sources, threshold: float = 50) -> pd.DataFrame:
         read_list = read_medicament_file(source_name)
         data_matched = match_seq_against_list(data_matched, read_list, source_name, searched_word, float(threshold))
 
-    res = pd.DataFrame(data_matched, columns=["name", "grammatik", "phonetik", "dataset"])
-    res['combined'] = res[['grammatik', 'phonetik']].mean(axis=1)
-    res = res.sort_values(by='combined', ascending=False)
+    res = pd.DataFrame(data_matched, columns=['name', 'gram', 'phon', 'phon-fr-1', 'phon-fr-2', 'dataset'])
+    res['comb'] = res[['gram', 'phon']].mean(axis=1)
+    res = res.sort_values(by='comb', ascending=False)
 
     # VERIFY IT IS EMPTY
+    print(res)
     res = verify_dataframe_has_items(res)
+    print(res)
 
     # COLLAPSE SOURCES AND DEDUPLICATE
     res = collapse_sources(res)
