@@ -27,7 +27,6 @@ def read_medicament_file(chosen_sources: List):
         name = pd.Series(data.iloc[:, [1, 4]].to_numpy().flatten())
         name = name.drop_duplicates()
         name = name.dropna().to_list()
-        print("Number of drugs at the FDA database: ", len(name))
 
     if chosen_sources == 'usan':
         # filepath = _MYPATH + 'static/drugs_usan_20210227.csv'
