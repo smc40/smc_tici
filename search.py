@@ -1,33 +1,9 @@
 import sys
 import pandas as pd
 from pandas import DataFrame
-from typing import List
-
-from backend.comparison_utils import orthographic_comparison, phonetic_comparison
-from backend.load_files import read_medicament_file, _MYPATH
-
-
-def match_seq_against_list(datamatched, database: List, name_source: str, searched_word, threshold: float):
-
-    for each in database:
-        ratio = orthographic_comparison(searched_word, each, 'SequenceMatcher')
-
-        ratio_phonetic = phonetic_comparison(searched_word, each, 'Kolner')
-
-        ratio_fr_phonetic_fonem = phonetic_comparison(searched_word, each, 'fr-fonem')
-
-        ratio_fr_phonetic_henry = phonetic_comparison(searched_word, each, 'fr-henry')
-
-        ratio_combined = (ratio + ratio_phonetic) / 2
-        if ratio_combined >= (float(threshold)/100):
-            datamatched.append([each,
-                                round(ratio * 100),
-                                round(ratio_phonetic * 100),
-                                round(ratio_fr_phonetic_fonem * 100),
-                                round(ratio_fr_phonetic_henry * 100),
-                                name_source])
-
-    return datamatched
+from backend.load_files import read_medicament_file_as_list
+from backend.env import _MYPATH
+from backend.matching_sequences import match_seq_against_list
 
 
 def collapse_sources(df_drugs_identified):
@@ -64,18 +40,23 @@ def search(searched_word: str, sources, threshold: float = 50) -> pd.DataFrame:
 
     """
 
-    # UPPERCASE SEARCHED WORD
+    # UPPERCASE SEARCHED WORD, WHERE SEARCHED_WORD IS STRING SUBMITTED BY USER.
     searched_word = str(searched_word).upper()
 
-    # INITIALIZE 'data_matched' VARIABLE
+    # INITIALIZE 'data_matched' VARIABLE. LIST WITH MATCHES THAT IS LATER READ AS DATAFRAME.
     data_matched = []
     for source_name in sources:
-        read_list = read_medicament_file(source_name)
+        read_list = read_medicament_file_as_list(source_name)
         data_matched = match_seq_against_list(data_matched, read_list, source_name, searched_word, float(threshold))
 
-    res = pd.DataFrame(data_matched, columns=['name', 'gram', 'phon', 'phon-fr-1', 'phon-fr-2', 'dataset'])
-    res['comb'] = res[['gram', 'phon']].mean(axis=1)
+    res = pd.DataFrame(data_matched, columns=['name', 'gram', 'phon-de', 'phon-fr', 'dataset'])
+
+    # COMBINATION SCORE GERMAN
+    res['comb'] = res[['gram', 'phon-de']].mean(axis=1)
     res = res.sort_values(by='comb', ascending=False)
+
+    # COMBINATION SCORE FRENCH
+    res['comb-fr'] = res[['gram', 'phon-fr']].mean(axis=1)
 
     # VERIFY IT IS EMPTY
     print(res)

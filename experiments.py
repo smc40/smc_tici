@@ -1,8 +1,8 @@
 import os
 import pandas as pd
-from search import read_medicament_file
-from search import orthographic_comparison
-from search import phonetic_comparison
+from search import read_medicament_file_as_list
+from backend.comparison_utils import orthographic_comparison, phonetic_comparison
+
 
 _MYPATH = 'C:/Users/pen/PycharmProjects/poca_app/'
 
@@ -97,7 +97,7 @@ def run_experiments() -> pd.DataFrame:
 
     all_sources = []
     for source_name in sources:
-        all_sources.extend(read_medicament_file(source_name))
+        all_sources.extend(read_medicament_file_as_list(source_name))
 
     # NOW WE GO EXPERIMENT PER EXPERIMENT
     all_experiments = []

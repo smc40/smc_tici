@@ -20,9 +20,23 @@ Our application looks as follows: ![image](https://github.com/smc40/smc_tici/ass
 
 With a search engine in the first field that allows users to search through our data and an adjustable Threshold value that can change how many results are displayed to the user. Below there are 4 options for sources of medicinal substances names that are available to search through. Additionally, there are two buttons in the bottom of the page that offer additional information to the users about the application.
 
+### How to deploy locally
+
+1. Clone repository locally
+2. Currently running on Python 3.9
+3. Create a virtual environment with `python -m venv name_of_your_venv`
+4. Once inside the virtual environment, install all requirements `pip install -r requirements.txt`
+5. Located in the same folder as app.py, run the command: `python -m flask run`. This will respond with the specific http address
+
+
 ### Data Sources
 
-As shown in the application, there are four sources used within TICI: An FDA source, and RXNorm source, a USAN sources and finally the Swissmedic source. Where these sources are obtained is explained below.
+As shown in the application, there are four sources used within TICI: 
+An FDA source, and RXNorm source, a USAN sources and finally the Swissmedic source. 
+Where these sources are obtained is explained below.
+
+The Swissmedic file is obtained from the following public source: https://www.swissmedic.ch/swissmedic/de/home/services/listen_neu.html
+and was latest updated on 15.06.2023.
 
 
 ### Contact
