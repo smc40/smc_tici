@@ -14,8 +14,9 @@ def process_folder_path():
 
         #new_path = resolved_path.with_name(new_folder_name)
         return str(new_folder_name)
-
-    if folder_name.endswith("smc_tici/smc_tici"):
+    elif folder_name.endswith("smc_tici/smc_tici"):
+        return str(folder_name)
+    else:
         return str(folder_name)
 
     return None
@@ -24,6 +25,7 @@ def process_folder_path():
 path_extracted = process_folder_path()
 if type(path_extracted) == str:
     _MYPATH = path_extracted + '/'
+
 
 FDA_FILEPATH = _MYPATH + 'static/drugsatfda_20210527.csv'
 USAN_FILEPATH = _MYPATH + 'static/data/20211125_USAN_stem_list_cumulative_csv_2.csv'
