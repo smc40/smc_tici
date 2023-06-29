@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'tici-application-june'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_A4BAB95AC85A403A8AFAC1C9711E365A }}
+          publish-profile: ${{ secrets.AzureAppService_PublishProfile_707ded29be704083aa9d29e874f38d35 }}
