@@ -3,4 +3,3 @@ __pycache__/
 backend/__pycache__/
 venv
 .idea
-output
