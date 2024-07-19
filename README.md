@@ -25,7 +25,7 @@ With a search engine in the first field that allows users to search through our 
 1. Clone repository locally
 2. Currently running on Python 3.9
 3. Create a virtual environment with `python -m venv name_of_your_venv`
-4. Once inside the virtual environment, install all requirements `pip install -r requirements.txt`
+4. Once inside the virtual environment, install all requirements `pip install -r req_freeze.txt`
 5. Located in the same folder as app.py, run the command: `python -m flask run`. This will respond with the specific http address
 
 
