@@ -2,7 +2,7 @@ import sys
 import pandas as pd
 from pandas import DataFrame
 from backend.load_files import read_medicament_file_as_list
-from backend.env import ROOT_PATH
+# from backend.env import OUTPUT_PATH
 from backend.matching_sequences import match_seq_against_list
 
 
@@ -66,7 +66,7 @@ def search(searched_word: str, sources, threshold: float = 50) -> pd.DataFrame:
     # COLLAPSE SOURCES AND DEDUPLICATE
     res = collapse_sources(res)
 
-    # res.to_csv(ROOT_PATH + 'output/result_' + searched_word + '.csv', header=None)
+    # res.to_csv(OUTPUT_PATH / 'result_' + searched_word + '.csv', header=None)
     return res
 
 
