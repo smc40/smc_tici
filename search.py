@@ -66,7 +66,7 @@ def search(searched_word: str, sources, threshold: float = 50) -> pd.DataFrame:
     # COLLAPSE SOURCES AND DEDUPLICATE
     res = collapse_sources(res)
 
-    res.to_csv(ROOT_PATH + 'output/result_' + searched_word + '.csv', header=None)
+    # res.to_csv(ROOT_PATH + 'output/result_' + searched_word + '.csv', header=None)
     return res
 
 
