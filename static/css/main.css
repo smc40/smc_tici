@@ -434,11 +434,10 @@ textarea.input2 + .focus-input2::after {
 
 /*Added by Nico*/
 .button-blue{
-    block;
-    padding: 0.03em 1em /*0.03em 1*/
-    display:inline-0.2em; /*0.2 em*/
+    padding: 0.03em 1em; /*0.03em 1*/
+    display:inline-block; /*0.2 em*/
     margin:0 0.3em 0.3em 0; /*0 0.3em 0.3em 0*/
-    This makes the corners
+    /*This makes the corners*/
     border-radius: 4em; /*2em*/
     box-sizing: border-box;
     text-decoration:none;
@@ -453,14 +452,6 @@ textarea.input2 + .focus-input2::after {
     background-color:#4095c6;
 }
 
-
-
-
-
-
-
-
-
-
-
-
+.tici-logo {
+  width: 30vw;
+}
