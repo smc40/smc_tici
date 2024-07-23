@@ -18,11 +18,14 @@ resource "azurerm_app_service" "as" {
   service_plan_id = azurerm_service_plan.sp.id
 
   site_config {
-    linux_fx_version = "PYTHON|3.8"
+    linux_fx_version = "PYTHON|3.9"
+    app_command_line = "python -m flask run"
   }
 
   app_settings = {
     "WEBSITES_ENABLE_APP_SERVICE_STORAGE" = "false"
     "SCM_DO_BUILD_DURING_DEPLOYMENT"      = "true"
+    "FLASK_APP"                           = "app.py"  # Assuming your Flask app entry point is app.py
+    "FLASK_ENV"                           = "production"
   }
 }
