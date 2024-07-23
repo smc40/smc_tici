@@ -1,0 +1,5 @@
+env = "dev"
+name = "tici"
+location = "Switzerland North"
+sp_os_type = "Linux"
+sp_sku_name = "F1"
