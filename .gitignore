@@ -4,6 +4,7 @@ venv
 .idea
 output
 todo.md
+/.secrets
 
 # Local .terraform directories
 **/.terraform/*
