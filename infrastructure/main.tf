@@ -1,31 +1,55 @@
+locals {
+  prefix = "smc"
+  appname = "tici-app"
+  location = "Switzerland North"
+
+  acr_sku = "Basic"
+
+  tags = {
+    env = var.environment
+    createdBy = "Terraform"
+  }
+}
+
+
 resource "azurerm_resource_group" "rg" {
-  name = "rg-smc-${var.name}-${var.env}" 
-  location = var.location
+  name = "rg-${local.prefix}-${local.appname}-${var.environment}"
+  location = local.location
+  tags = local.tags
 }
 
-resource "azurerm_service_plan" "sp" {
-  name = "sp-${var.name}-${var.env}"
+resource "azurerm_container_registry" "acr" {
+  name = "acr-${local.prefix}-${local.appname}-${var.environment}"
   resource_group_name = azurerm_resource_group.rg.name
-  location = azurerm_resource_group.rg.location
-  os_type = var.sp_os_type
-  sku_name = var.sp_sku_name
+  location = local.location
+  sku = local.acr_sku
+  admin_enabled = false
 }
 
-resource "azurerm_app_service" "as" {
-  name = "as-${var.name}-${var.env}"
+resource "azurerm_container_app_environment" "acae" {
+  name = "acae-${local.prefix}-${local.appname}-${var.environment}"
   resource_group_name = azurerm_resource_group.rg.name
-  location = azurerm_resource_group.rg.location
-  service_plan_id = azurerm_service_plan.sp.id
+  location = local.location
+}
 
-  site_config {
-    linux_fx_version = "PYTHON|3.9"
-    app_command_line = "python -m flask run"
+resource "azurerm_container_app" "aca" {
+  container_app_environment_id = azurerm_container_app_environment.acae.id
+  name                         = "aca-${local.prefix}-${local.appname}-${var.environment}"
+  resource_group_name = azurerm_resource_group.rg.name
+  revision_mode                = var.container_app_revision_mode
+
+  template {
+    container {
+      name   = local.appname
+      image  = "${azurerm_container_registry.acr.login_server}/${local.appname}:latest"
+      cpu    = "0.5"
+      memory = "1.0Gi"
+    }
   }
 
-  app_settings = {
-    "WEBSITES_ENABLE_APP_SERVICE_STORAGE" = "false"
-    "SCM_DO_BUILD_DURING_DEPLOYMENT"      = "true"
-    "FLASK_APP"                           = "app.py"  # Assuming your Flask app entry point is app.py
-    "FLASK_ENV"                           = "production"
-  }
+}
+
+# Output the Container Registry Login Server URL
+output "container_registry_login_server" {
+  value = azurerm_container_registry.acr.login_server
 }

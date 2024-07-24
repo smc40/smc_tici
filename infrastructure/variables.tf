@@ -1,30 +1,31 @@
-variable "env" {
+variable "environment" {
   description = "Generic resource name"
   type = string
 
   validation {
-    condition     = contains(["dev", "test", "prod"], var.env)
+    condition     = contains(["dev", "test", "prod"], var.environment)
     error_message = "Environment must be one of 'dev', 'test', or 'prod'."
   }
 }
 
-variable "name" {
-  description = "Generic resource name"
+variable "container_app_revision_mode" {
+  description = "Revision mode of container app (Single or Multiple"
   type = string
+
+  validation {
+    condition     = contains(["Single", "Multiple"], var.container_app_revision_mode)
+    error_message = "Environment must be one of 'dev', 'test', or 'prod'."
+  }
 }
 
-variable "location" {
-  description = "Azure location of the resources"
-  type = string
-  default = "Switzerland North"
+variable "container_app_cpu" {
+  description = "The amount of vCPU to allocate to the container"
+  type = number
+  default = 0.5
 }
 
-variable "sp_os_type" {
-  description = "Type of Operating System"
+variable "container_app_memory" {
+  description = "The amount of memory to allocate to the container"
   type = string
-}
-
-variable "sp_sku_name" {
-  description = "Azure Service Plan SKU-Size"
-  type = string
+  default = "1Gi"
 }
