@@ -20,8 +20,8 @@ variable "container_app_revision_mode" {
 
 variable "container_app_cpu" {
   description = "The amount of vCPU to allocate to the container"
-  type = number
-  default = 0.5
+  type = string
+  default = "0.5"
 }
 
 variable "container_app_memory" {

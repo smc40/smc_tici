@@ -4,3 +4,7 @@ venv
 .idea
 output
 todo.md
+/infrastructure/.terraform.lock.hcl
+/infrastructure/.terraform
+/infrastructure/terraform.tfstate
+/infrastructure/terraform.tfstate.backup
