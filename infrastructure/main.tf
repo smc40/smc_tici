@@ -1,17 +1,3 @@
-locals {
-  prefix = "smc"
-  appname = "ticiapp"
-  location = "Switzerland North"
-
-  acr_sku = "Basic"
-
-  tags = {
-    env = var.environment
-    createdBy = "Terraform"
-  }
-}
-
-
 resource "azurerm_resource_group" "main" {
   name = "rg-${local.prefix}-${local.appname}-${var.environment}"
   location = local.location
@@ -55,14 +41,4 @@ resource "azurerm_container_app" "main" {
       latest_revision = true
     }
   }
-}
-
-# Output the Container Registry Login Server URL
-output "container_registry_login_server" {
-  value = azurerm_container_registry.main.login_server
-}
-
-# Output the Application URL (Fully qualified domain name)
-output "application_url" {
-  value = azurerm_container_app.main.latest_revision_fqdn
 }
