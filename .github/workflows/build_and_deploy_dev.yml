@@ -1,8 +1,4 @@
-# Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
-# More GitHub Actions for Azure: https://github.com/Azure/actions
-# More info on Python, GitHub Actions, and Azure App Service: https://aka.ms/python-webapps-actions
-
-name: Build and Deploy to Azure Web App
+name: Build and Deploy to Azure Container App
 
 on:
   push:
@@ -53,6 +49,6 @@ jobs:
 
       - name: Build and Push Image
         run: |
-          IMAGE_NAME=${{ steps.acr_login_server.outputs.server }}/ticiapp:latest
+          IMAGE_NAME=${{ secrets.TICIAPP_IMAGE_NAME }}/ticiapp:latest
           docker build -t $IMAGE_NAME . 
           docker push $IMAGE_NAME
