@@ -1,5 +1,5 @@
 variable "environment" {
-  description = "Generic resource name"
+  description = "Environment (dev, test, prod)"
   type = string
 
   validation {
@@ -9,8 +9,9 @@ variable "environment" {
 }
 
 variable "container_app_revision_mode" {
-  description = "Revision mode of container app (Single or Multiple"
+  description = "Revision mode of container app (Single or Multiple)"
   type = string
+  default = "Single"
 
   validation {
     condition     = contains(["Single", "Multiple"], var.container_app_revision_mode)
