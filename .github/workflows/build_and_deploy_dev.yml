@@ -7,7 +7,9 @@ env:
   PYTHON_VERSION: 3.9
   REGISTRY: ghcr.io
   IMAGE_NAME: ticiapp
-  CONTAINER_APP_NAME: aca-smc-ticiapp-dev
+  RESOURCE_GROUP: rg-smc-ticiapp-dev 
+  CONTAINER_APP_ENVIRONMENT: acae-smc-ticiapp-dev
+  CONTAINER_APP: aca-smc-ticiapp-dev
 
 
 permissions:
@@ -78,8 +80,10 @@ jobs:
         with:
           registryUsername: ${{ github.actor }}
           registryPassword: ${{ secrets.GITHUB_TOKEN }}
-          containerAppName: ${{ env.CONTAINER_APP_NAME }}
-          imageToDeploy: ${{ env.REGISTRY }}/${{ github.repository }}:${{ github.sha }}
+          resourceGroup: ${{ env.RESOURCE_GROUP }}
+          containerAppEnvironment: ${{ env.CONTAINER_APP_ENVIRONMENT }}
+          containerAppName: ${{ env.CONTAINER_APP }}
+          imageToDeploy: ${{ env.REGISTRY }}/${{ github.repository }}
             # appSourcePath: ${{ github.workspace }}
 
 
