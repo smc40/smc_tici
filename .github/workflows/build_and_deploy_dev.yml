@@ -2,6 +2,9 @@ name: Test, Build and Deploy TICI
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - main
 
 env:
   PYTHON_VERSION: 3.9
@@ -57,7 +60,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: ${{ env.REGISTRY }}/${{ github.repository }}
+          images: ${{ env.REGISTRY }}/${{ github.repository }}:latest
 
       - name: Build and push image to ghcr
         uses: docker/build-push-action@v5
@@ -83,7 +86,7 @@ jobs:
           resourceGroup: ${{ env.RESOURCE_GROUP }}
           containerAppEnvironment: ${{ env.CONTAINER_APP_ENVIRONMENT }}
           containerAppName: ${{ env.CONTAINER_APP }}
-          imageToDeploy: ${{ env.REGISTRY }}/${{ github.repository }}
+          imageToDeploy: ${{ env.REGISTRY }}/${{ github.repository }}:latest
             # appSourcePath: ${{ github.workspace }}
 
 
