@@ -7,6 +7,7 @@ env:
   PYTHON_VERSION: 3.9
   REGISTRY: ghcr.io
   IMAGE_NAME: ticiapp
+  CONTAINER_APP_NAME: aca-smc-ticiapp-dev
 
 
 permissions:
@@ -72,58 +73,13 @@ jobs:
           tenant-id: ${{ secrets.AZURE_TENANT_ID }}
           subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
 
-            #      - name: Deploy to Azure Container App
-            #        uses: azure/container-apps-deploy-action@v1
-            #        with:
-            #          appSourcePath: ${{ github.workspace }}
-            #          registryUrl: ghcr.io
-            #          registryUsername: ${{ github.actor }}
-            #          registryPassword: ${{ secrets.GITHUB_TOKEN }}
-            #          containerAppName: secrets.AZURE_CONTAINER_APP
-            #          resourceGroup: secrets.AZURE_RESOURCE_GROUP
-            #          imageToDeploy: ghcr.io/${{ github.repository }}:${{ github.sha }}
+      - name: Deploy to Azure Container App
+        uses: azure/container-apps-deploy-action@v1
+        with:
+          registryUsername: ${{ github.actor }}
+          registryPassword: ${{ secrets.GITHUB_TOKEN }}
+          containerAppName: ${{ env.CONTAINER_APP_NAME }}
+          imageToDeploy: ${{ env.REGISTRY }}/${{ github.repository }}:${{ github.sha }}
+            # appSourcePath: ${{ github.workspace }}
 
 
-
-
-          #        uses: actions/checkout@v2
-          #
-          #      - name: Set up Docker Buildx
-          #        uses: docker/setup-buildx-action@v2
-          #
-          #      - name: Set up Azure CLI
-          #        uses: azure/setup-cli@v1
-          #        with:
-          #          cli-version: latest
-          #
-          #      - name: Azure login
-          #        uses: azure/login@v1
-          #        with:
-          #          creds: ${{ secrets.AZURE_CLIENT_SECRET}}
-          #
-          #      - name: Set up Terraform
-          #        uses: hashicorp/setup-terraform@v2
-          #        with:
-          #          terraform_version: 1.9.2
-          #
-          #      - name: Run Terraform
-          #        working-directory: ./infrastructure
-          #        env:
-          #          ARM_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
-          #          ARM_CLIENT_SECRET: ${{ secrets.AZURE_CLIENT_SECRET }}
-          #          ARM_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
-          #          ARM_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
-          #        run: |
-          #          terraform init
-          #          terraform apply -auto-approve -var-file=environment/dev.tfvars
-          #
-          #      - name: Get ACR Login Server
-          #        id: acr_login_server
-          #        working-directory: ./infrastructure
-          #        run: echo "##[set-output name=server;]$(terraform output -raw container_registry_login_server)"
-          #
-          #      - name: Build and Push Image
-          #        run: |
-          #          IMAGE_NAME=${{ secrets.TICIAPP_IMAGE_NAME }}/ticiapp:latest
-          #          docker build -t $IMAGE_NAME .
-          #          docker push $IMAGE_NAME

@@ -2,14 +2,6 @@ data "azurerm_resource_group" "main" {
   name = local.resource_group
 }
 
-resource "azurerm_container_registry" "main" {
-  name                  = "acr${local.prefix}${local.appname}${var.environment}"
-  resource_group_name   = data.azurerm_resource_group.main.name
-  location              = local.location
-  sku                   = local.acr_sku
-  admin_enabled         = false
-}
-
 resource "azurerm_container_app_environment" "main" {
   name                  = "acae-${local.prefix}-${local.appname}-${var.environment}"
   resource_group_name   = data.azurerm_resource_group.main.name
