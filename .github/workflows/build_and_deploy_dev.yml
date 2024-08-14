@@ -60,7 +60,9 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: ${{ env.REGISTRY }}/${{ github.repository }}:latest
+          images: ${{ env.REGISTRY }}/${{ github.repository }}
+          tags: |
+            type=raw,value=latest
 
       - name: Build and push image to ghcr
         uses: docker/build-push-action@v5
@@ -86,7 +88,6 @@ jobs:
           resourceGroup: ${{ env.RESOURCE_GROUP }}
           containerAppEnvironment: ${{ env.CONTAINER_APP_ENVIRONMENT }}
           containerAppName: ${{ env.CONTAINER_APP }}
-          imageToDeploy: ${{ env.REGISTRY }}/${{ github.repository }}:latest
-            # appSourcePath: ${{ github.workspace }}
+          imageToDeploy: ${{ steps.meta.outputs.tags }}
 
 
