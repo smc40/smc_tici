@@ -16,7 +16,7 @@ resource "azurerm_container_app" "main" {
 
   template {
     container {
-      name    = local.appname
+      name    = "helloworld" 
       image   = "mcr.microsoft.com/azuredocs/aci-helloworld:latest"  # Placeholder image
       cpu     = var.container_app_cpu
       memory  = var.container_app_memory
