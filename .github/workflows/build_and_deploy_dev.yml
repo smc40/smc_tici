@@ -1,9 +1,7 @@
 name: Test, Build and Deploy TICI
 
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch:
 
 env:
   PYTHON_VERSION: 3.9
@@ -54,7 +52,7 @@ jobs:
 
       - name: Extract metadata for Docker
         id: meta
-        uses: docker/metadata-action@v4
+        uses: docker/metadata-action@v5
         with:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
 
