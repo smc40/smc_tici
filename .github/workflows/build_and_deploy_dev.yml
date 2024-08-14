@@ -89,5 +89,6 @@ jobs:
           containerAppEnvironment: ${{ env.CONTAINER_APP_ENVIRONMENT }}
           containerAppName: ${{ env.CONTAINER_APP }}
           imageToDeploy: ${{ steps.meta.outputs.tags }}
+          forceNewDeployment: true
 
 
