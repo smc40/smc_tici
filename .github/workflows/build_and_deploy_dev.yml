@@ -86,13 +86,6 @@ jobs:
           registryUsername: ${{ github.actor }}
           registryPassword: ${{ secrets.GITHUB_TOKEN }}
           resourceGroup: ${{ env.RESOURCE_GROUP }}
-          containerAppEnvironment: ${{ env.CONTAINER_APP_ENVIRONMENT }}
           containerAppName: ${{ env.CONTAINER_APP }}
           imageToDeploy: ${{ steps.meta.outputs.tags }}
-
-      - name: Restart Azure Container App
-        run: |
-          az containerapp restart \
-          --name ${{ env.CONTAINER_APP }} \
-          --resource-group ${{ env.RESOURCE_GROUP }}
 
