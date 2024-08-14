@@ -89,6 +89,10 @@ jobs:
           containerAppEnvironment: ${{ env.CONTAINER_APP_ENVIRONMENT }}
           containerAppName: ${{ env.CONTAINER_APP }}
           imageToDeploy: ${{ steps.meta.outputs.tags }}
-          forceNewDeployment: true
 
+      - name: Restart Azure Container App
+        run: |
+          az containerapp restart \
+          --name ${{ env.CONTAINER_APP }} \
+          --resource-group ${{ env.RESOURCE_GROUP }}
 
