@@ -62,7 +62,7 @@ jobs:
           context: .
           push: true
           file: ./Dockerfile
-          tags: ${{ steps.meta.output.tags }}
+          tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.ouputs.labels }}
 
       - name: Azure login
