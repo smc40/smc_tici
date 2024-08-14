@@ -41,8 +41,8 @@ def searcher():
     threshold = request.form.get('threshold')
 
     if request.method == 'POST':
-        print(f'\nThis is the request form with the selected lists: {request.form.getlist("checkbox_sources")}')
         sources = request.form.getlist('checkbox_sources')
+        print(f'\nThis is the request form with the selected lists: {sources}')
     else:
         return print('We tried')
 
